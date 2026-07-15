@@ -1,0 +1,60 @@
+{
+  "inventory": {
+    "title": "Инвентар",
+    "description": "Следи консумативите, наличностите и поръчките",
+    "addProduct": "Добави продукт",
+    "exportCsv": "Експорт CSV",
+    "searchPlaceholder": "Търсене на продукти…",
+    "lowStockAlert_one": "{{count}} продукт е под минималната наличност",
+    "lowStockAlert_other": "{{count}} продукта са под минималната наличност",
+    "categories": {
+      "all": "Всички",
+      "inks": "Мастила",
+      "needles": "Игли",
+      "machines": "Машини",
+      "aftercare": "Грижа след",
+      "hygiene": "Хигиена",
+      "supplies": "Консумативи"
+    },
+    "table": {
+      "product": "Продукт",
+      "category": "Категория",
+      "stock": "Наличност",
+      "price": "Цена",
+      "supplier": "Доставчик",
+      "actions": "Действия",
+      "min": "мин. {{count}}"
+    },
+    "form": {
+      "addTitle": "Добави продукт",
+      "addDescription": "Добави нов продукт към инвентара на студиото.",
+      "editTitle": "Редактирай продукт",
+      "editDescription": "Актуализирай данните за продукта.",
+      "name": "Име",
+      "namePlaceholder": "напр. Премиум черно мастило 30 мл",
+      "brand": "Марка",
+      "brandPlaceholder": "напр. Eternal Ink",
+      "category": "Категория",
+      "selectCategory": "Избери категория",
+      "stock": "Наличност",
+      "minStock": "Минимална наличност",
+      "price": "Цена",
+      "supplier": "Доставчик",
+      "supplierPlaceholder": "напр. Killer Ink",
+      "save": "Запази продукта",
+      "added": "Продуктът е добавен в инвентара",
+      "updated": "Продуктът е актуализиран"
+    },
+    "decrease": "Намали наличността",
+    "increase": "Увеличи наличността",
+    "deleteTitle": "Да се изтрие ли този продукт?",
+    "deleteText": "„{{name}}“ ще бъде премахнат от инвентара. Действието е необратимо.",
+    "deleted": "Продуктът е изтрит",
+    "lowStockActivity": "{{name}} падна под минималната наличност: остават {{stock}} (мин. {{min}}). Поръчай от {{supplier}}.",
+    "empty": {
+      "title": "Няма намерени продукти",
+      "text": "Опитай друго търсене или категория.",
+      "clear": "Изчисти филтрите"
+    }
+  }
+}

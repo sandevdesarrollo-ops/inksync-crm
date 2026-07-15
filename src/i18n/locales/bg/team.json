@@ -1,0 +1,67 @@
+{
+  "team": {
+    "title": "Екип",
+    "description": "Артисти, графици и тарифи — хората зад иглите.",
+    "addMember": "Добави член",
+    "editMember": "Редактирай член",
+    "roles": {
+      "owner": "Собственик",
+      "artist": "Артист",
+      "apprentice": "Стажант"
+    },
+    "active": "Активен",
+    "days": {
+      "mon": "П",
+      "tue": "В",
+      "wed": "С",
+      "thu": "Ч",
+      "fri": "П",
+      "sat": "С",
+      "sun": "Н"
+    },
+    "daysFull": {
+      "mon": "Понеделник",
+      "tue": "Вторник",
+      "wed": "Сряда",
+      "thu": "Четвъртък",
+      "fri": "Петък",
+      "sat": "Събота",
+      "sun": "Неделя"
+    },
+    "weeklySchedule": "Седмичен график",
+    "apptsThisMonth": "Часове",
+    "revenueThisMonth": "Приходи",
+    "thisMonth": "този месец",
+    "perHour": "/ч",
+    "form": {
+      "name": "Име",
+      "namePlaceholder": "напр. Алекс Ривера",
+      "role": "Роля",
+      "styles": "Стилове",
+      "stylesPlaceholder": "Тънка линия, Blackwork",
+      "stylesHint": "Разделяй стиловете със запетаи",
+      "phone": "Телефон",
+      "email": "Имейл",
+      "hourlyRate": "Часова ставка",
+      "workingDays": "Работни дни"
+    },
+    "addTitle": "Добавяне на член на екипа",
+    "addDescription": "Нов артист или стажант се присъединява към студиото.",
+    "editDescription": "Обнови данните, тарифата или графика.",
+    "removeTitle": "Да премахнем ли {{name}}?",
+    "removeDescription": "Ще изчезне от списъка. Миналите часове остават в историята.",
+    "remove": "Премахни",
+    "ownerBlockedTitle": "Собственикът остава",
+    "ownerBlockedDescription": "Не можеш да премахнеш собственика на студиото. Първо прехвърли собствеността.",
+    "addedToast": "{{name}} се присъедини към екипа",
+    "updatedToast": "{{name}} е обновен",
+    "removedToast": "{{name}} е премахнат от екипа",
+    "activatedToast": "{{name}} вече е активен",
+    "deactivatedToast": "{{name}} е отбелязан като неактивен",
+    "activityAdded": "Нов член на екипа: {{name}} ({{role}})",
+    "activityRemoved": "Премахнат член на екипа: {{name}}",
+    "emptyTitle": "Все още няма членове на екипа",
+    "emptyDescription": "Добави първия си артист, за да започнеш да планираш работа.",
+    "nameRequired": "Името е задължително"
+  }
+}

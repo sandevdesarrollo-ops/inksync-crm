@@ -1,0 +1,69 @@
+{
+  "calendar": {
+    "title": "Календар",
+    "description": "Часове и резервации в цялото студио",
+    "newAppointment": "Нов час",
+    "views": { "month": "Месец", "week": "Седмица" },
+    "prevPeriod": "Назад",
+    "nextPeriod": "Напред",
+    "allArtists": "Всички артисти",
+    "filterByArtist": "Филтър по артист",
+    "more": "+{{count}} още",
+    "appointments_one": "{{count}} час",
+    "appointments_other": "{{count}} часа",
+    "emptyDay": "Няма резервации за този ден.",
+    "emptyDayAction": "Запази сесия",
+    "status": {
+      "pending": "Изчакващ",
+      "confirmed": "Потвърден",
+      "completed": "Завършен",
+      "cancelled": "Отказан"
+    },
+    "form": {
+      "client": "Клиент",
+      "selectClient": "Избери клиент",
+      "artist": "Артист",
+      "selectArtist": "Избери артист",
+      "titleLabel": "Заглавие",
+      "titlePlaceholder": "напр. Фина линия флорал — предмишница",
+      "date": "Дата",
+      "time": "Час",
+      "duration": "Продължителност (мин)",
+      "price": "Цена",
+      "deposit": "Депозит",
+      "depositHint": "{{percent}}% от цената, може да се редактира",
+      "notes": "Бележки",
+      "notesPlaceholder": "Статус на шаблона, разположение, напомняния…",
+      "create": "Създай час"
+    },
+    "detail": {
+      "clientInfo": "Клиент",
+      "artist": "Артист",
+      "schedule": "График",
+      "price": "Цена",
+      "deposit": "Депозит",
+      "notes": "Бележки",
+      "noNotes": "Няма бележки за този час.",
+      "confirm": "Потвърди",
+      "complete": "Завърши",
+      "cancelAppointment": "Откажи часа",
+      "delete": "Изтрий",
+      "confirmDelete": "Наистина ли да изтрия?",
+      "minutes": "{{count}} мин"
+    },
+    "toast": {
+      "created": "Часът е запазен",
+      "createdDesc": "{{title}} на {{date}}",
+      "missingFields": "Липсват данни",
+      "missingFieldsDesc": "Клиент, артист, заглавие, дата и час са задължителни.",
+      "statusUpdated": "Статусът е обновен",
+      "statusUpdatedDesc": "Часът е отбелязан като {{status}}.",
+      "deleted": "Часът е изтрит"
+    },
+    "activity": {
+      "created": "Запазен час: {{client}} — {{title}}.",
+      "statusChanged": "Час {{status}}: {{client}} — {{title}}.",
+      "deleted": "Изтрит час: {{client}} — {{title}}."
+    }
+  }
+}

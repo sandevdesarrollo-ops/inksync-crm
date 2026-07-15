@@ -1,0 +1,92 @@
+{
+  "clients": {
+    "title": "Клиенти",
+    "description": "Всеки, който се доверява на иглите ти — профили, история и разходи.",
+    "addClient": "Нов клиент",
+    "stats": {
+      "total": "Общо клиенти",
+      "vips": "VIP",
+      "newThisMonth": "Нови този месец",
+      "inactive": "Неактивни"
+    },
+    "searchPlaceholder": "Търсене по име, имейл или телефон…",
+    "filters": {
+      "all": "Всички",
+      "new": "Нови",
+      "active": "Активни",
+      "vip": "VIP",
+      "inactive": "Неактивни"
+    },
+    "table": {
+      "client": "Клиент",
+      "phone": "Телефон",
+      "visits": "Посещения",
+      "spent": "Общо похарчено",
+      "artist": "Предпочитан артист",
+      "status": "Статус",
+      "lastVisit": "Последно посещение"
+    },
+    "status": {
+      "new": "Нов",
+      "active": "Активен",
+      "vip": "VIP",
+      "inactive": "Неактивен"
+    },
+    "empty": {
+      "title": "Няма съвпадащи клиенти",
+      "hint": "Опитай друго търсене или филтър, или добави първия си клиент.",
+      "action": "Изчисти филтрите"
+    },
+    "detail": {
+      "clientSince": "Клиент от {{date}}",
+      "contact": "Контакт",
+      "styles": "Стилове",
+      "visits": "Посещения",
+      "totalSpent": "Общо похарчено",
+      "lastVisit": "Последно посещение",
+      "never": "Никога",
+      "notes": "Бележки",
+      "notesPlaceholder": "Алергии, предпочитания, планове за проекти…",
+      "notesSaved": "Бележките са запазени",
+      "appointments": "История на часовете",
+      "noAppointments": "Все още няма часове.",
+      "proposals": "Оферти",
+      "noProposals": "Все още няма оферти.",
+      "bookSession": "Запази сесия",
+      "sendMessage": "Изпрати съобщение",
+      "statusChanged": "Статусът е обновен",
+      "apptStatus": {
+        "confirmed": "Потвърден",
+        "pending": "Чакащ",
+        "completed": "Завършен",
+        "cancelled": "Отменен"
+      },
+      "proposalStatus": {
+        "draft": "Чернова",
+        "sent": "Изпратена",
+        "deposit_paid": "Платен депозит",
+        "accepted": "Приета",
+        "expired": "Изтекла"
+      }
+    },
+    "add": {
+      "title": "Нов клиент",
+      "subtitle": "Създай профил на нов клиент.",
+      "name": "Пълно име",
+      "namePlaceholder": "напр. Нина Алварес",
+      "email": "Имейл",
+      "phone": "Телефон",
+      "artist": "Предпочитан артист",
+      "artistPlaceholder": "Избери артист",
+      "noArtist": "Без предпочитание",
+      "styles": "Стилове",
+      "stylesPlaceholder": "Fine line, Blackwork…",
+      "notes": "Бележки",
+      "notesPlaceholder": "Всичко, което си струва да се запомни…",
+      "submit": "Добави клиент",
+      "created": "Клиентът е добавен",
+      "createdDesc": "{{name}} вече е в списъка ти с клиенти.",
+      "activityLog": "Добавен нов клиент: {{name}}"
+    }
+  }
+}
