@@ -1,0 +1,65 @@
+{
+  "designs": {
+    "title": "Designs",
+    "description": "Portfolio and flash gallery — every piece the studio has to offer",
+    "addDesign": "Add design",
+    "searchPlaceholder": "Search designs…",
+    "allStyles": "All styles",
+    "allArtists": "All artists",
+    "likes_one": "{{count}} like",
+    "likes_other": "{{count}} likes",
+    "empty": {
+      "title": "No designs match",
+      "text": "Try a different search or clear the filters.",
+      "clear": "Clear filters"
+    },
+    "form": {
+      "addTitle": "Add design",
+      "addDescription": "Add a new piece to the studio gallery.",
+      "title": "Title",
+      "titlePlaceholder": "e.g. Serpent & Peonies",
+      "artist": "Artist",
+      "selectArtist": "Select artist",
+      "style": "Style",
+      "stylePlaceholder": "e.g. Fine line",
+      "bodyPart": "Body part",
+      "bodyPartPlaceholder": "e.g. Forearm",
+      "price": "Price",
+      "imageUrl": "Image URL",
+      "imageUrlPlaceholder": "https://…",
+      "upload": "Upload image",
+      "or": "or",
+      "tags": "Tags",
+      "tagsPlaceholder": "flash, available",
+      "tagsHint": "Comma separated",
+      "preview": "Preview",
+      "save": "Save design",
+      "added": "Design added to the gallery"
+    },
+    "detail": {
+      "style": "Style",
+      "bodyPart": "Body part",
+      "price": "Price",
+      "tags": "Tags",
+      "by": "by {{name}}",
+      "like": "Like",
+      "tryOn": "Try on skin",
+      "deleteTitle": "Delete this design?",
+      "deleteText": "\"{{title}}\" will be removed from the gallery. This cannot be undone.",
+      "deleted": "Design deleted"
+    },
+    "tryOn": {
+      "title": "Try on skin",
+      "description": "Upload a photo of the body part, then drag, resize and rotate the design.",
+      "uploadPhoto": "Upload a photo",
+      "uploadHint": "A clear, well-lit photo of the body part works best.",
+      "changePhoto": "Change photo",
+      "dragHint": "Drag the design to position it",
+      "scale": "Size",
+      "rotation": "Rotation",
+      "opacity": "Opacity",
+      "download": "Download preview",
+      "downloadError": "Could not export the preview image"
+    }
+  }
+}

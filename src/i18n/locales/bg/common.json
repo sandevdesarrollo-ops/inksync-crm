@@ -1,0 +1,42 @@
+{
+  "app": { "name": "InkSync", "tagline": "CRM за студио" },
+  "nav": {
+    "overview": "Преглед",
+    "dashboard": "Табло",
+    "activity": "Фокус",
+    "reports": "Отчети",
+    "studio": "Студио",
+    "calendar": "Календар",
+    "clients": "Клиенти",
+    "designs": "Дизайни",
+    "proposals": "Оферти",
+    "messages": "Съобщения",
+    "nurture": "Грижа",
+    "operations": "Операции",
+    "inventory": "Наличности",
+    "team": "Екип",
+    "settings": "Настройки"
+  },
+  "common": {
+    "add": "Добави",
+    "save": "Запази",
+    "cancel": "Отказ",
+    "delete": "Изтрий",
+    "edit": "Редактирай",
+    "search": "Търсене",
+    "all": "Всички",
+    "actions": "Действия",
+    "status": "Статус",
+    "close": "Затвори",
+    "confirm": "Потвърди",
+    "today": "Днес",
+    "viewAll": "Виж всички",
+    "noResults": "Все още няма нищо тук",
+    "resetDemo": "Нулирай демо данните",
+    "language": "Език",
+    "saved": "Запазено",
+    "deleted": "Изтрито",
+    "sent": "Изпратено",
+    "copied": "Копирано"
+  }
+}

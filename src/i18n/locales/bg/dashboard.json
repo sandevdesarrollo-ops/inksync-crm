@@ -1,0 +1,53 @@
+{
+  "dashboard": {
+    "greetingMorning": "Добро утро",
+    "greetingAfternoon": "Добър ден",
+    "greetingEvening": "Добър вечер",
+    "subtitle": "Ето какво се случва днес в {{studio}}.",
+    "kpis": {
+      "revenueMonth": "Приходи този месец",
+      "revenueTrendUp": "+{{pct}}% спрямо миналия месец",
+      "revenueTrendDown": "{{pct}}% спрямо миналия месец",
+      "revenueTrendFlat": "На нивото на миналия месец",
+      "apptsToday": "Часове днес",
+      "apptsConfirmed": "{{n}} потвърдени",
+      "newClients": "Нови клиенти",
+      "newClientsCaption": "Присъединили се този месец",
+      "lowStock": "Изчерпващи се наличности",
+      "lowStockCaption": "Артикули под минимума — прегледайте"
+    },
+    "week": {
+      "title": "Тази седмица",
+      "caption": "Часове по дни",
+      "appointments": "Часове"
+    },
+    "schedule": {
+      "title": "Днешната програма",
+      "empty": "Няма записани сесии за днес.",
+      "openCalendar": "Отвори календара",
+      "with": "при {{artist}}"
+    },
+    "attention": {
+      "title": "Изисква внимание",
+      "empty": "Всичко е наред — няма нищо спешно.",
+      "goToFocus": "Към Фокус"
+    },
+    "messages": {
+      "title": "Непрочетени съобщения",
+      "empty": "Пощата е изчистена.",
+      "unread": "{{n}} непрочетени",
+      "openInbox": "Отвори съобщенията"
+    },
+    "status": {
+      "confirmed": "Потвърден",
+      "pending": "Изчакващ",
+      "completed": "Завършен",
+      "cancelled": "Отменен"
+    },
+    "priority": {
+      "high": "Висок",
+      "medium": "Среден",
+      "low": "Нисък"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "title": "Focus",
+    "description": "Where your attention should go today, sorted by what matters most.",
+    "filters": {
+      "all": "All",
+      "proposal": "Proposals",
+      "inventory": "Inventory",
+      "appointment": "Appointments",
+      "message": "Messages",
+      "client": "Clients"
+    },
+    "priority": {
+      "high": "High priority",
+      "medium": "Medium priority",
+      "low": "Low priority"
+    },
+    "go": "Go",
+    "markDone": "Mark as done",
+    "completed": "Completed",
+    "clearCompleted": "Clear completed",
+    "clearTitle": "Clear completed items?",
+    "clearDescription": "This permanently removes {{count}} completed items from the list.",
+    "clear": "Clear",
+    "clearedToast": "Completed items cleared",
+    "doneToast": "Nice — one less thing",
+    "allClearTitle": "All clear — the studio runs itself today.",
+    "allClearDescription": "Every item is handled. Enjoy the quiet or go check the calendar.",
+    "goToCalendar": "Open calendar",
+    "emptyFilterTitle": "Nothing here",
+    "emptyFilterDescription": "No open items in this category right now.",
+    "showAll": "Show all"
+  }
+}

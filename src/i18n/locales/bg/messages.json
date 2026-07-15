@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "title": "Съобщения",
+    "description": "Всички лични съобщения на едно място — Instagram, WhatsApp и Facebook.",
+    "filters": {
+      "all": "Всички",
+      "unread": "Непрочетени",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook"
+    },
+    "conversations": "Разговори",
+    "unreadCount": "{{count}} непрочетени",
+    "you": "Вие",
+    "viewProfile": "Виж профила",
+    "selectConversation": "Изберете разговор",
+    "selectConversationText": "Изберете чат отляво, за да четете и отговаряте.",
+    "emptyList": "Няма разговори",
+    "emptyListText": "Засега нищо не отговаря на този филтър.",
+    "back": "Назад",
+    "composerPlaceholder": "Напишете отговор… (Enter за изпращане, Shift+Enter за нов ред)",
+    "send": "Изпрати",
+    "messageSent": "Отговорът е изпратен",
+    "quickReplies": {
+      "label": "Бързи отговори",
+      "bookingConfirm": "Часът ви е потвърден! Очакваме ви в студиото — носете документ за самоличност и хапнете нещо преди това.",
+      "aftercare": "Напомняне за грижа: поддържайте чисто, хидратирайте 2 пъти дневно, без слънце и басейни 2 седмици. Пратете снимка, ако нещо не изглежда наред.",
+      "depositReminder": "Приятелско напомняне: линкът за депозита ви е още активен. Часът ви се потвърждава веднага след плащането."
+    },
+    "quickReplyNames": {
+      "bookingConfirm": "Потвърждение на час",
+      "aftercare": "Грижа след татуиране",
+      "depositReminder": "Напомняне за депозит"
+    },
+    "syncFootnote": "Синхронизацията на живо с Instagram, WhatsApp и Facebook се свързва от Настройки → Интеграции — в плановете ни е."
+  }
+}

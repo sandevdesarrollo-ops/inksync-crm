@@ -1,0 +1,42 @@
+{
+  "app": { "name": "InkSync", "tagline": "Studio CRM" },
+  "nav": {
+    "overview": "Overview",
+    "dashboard": "Dashboard",
+    "activity": "Focus",
+    "reports": "Reports",
+    "studio": "Studio",
+    "calendar": "Calendar",
+    "clients": "Clients",
+    "designs": "Designs",
+    "proposals": "Proposals",
+    "messages": "Messages",
+    "nurture": "Nurture",
+    "operations": "Operations",
+    "inventory": "Inventory",
+    "team": "Team",
+    "settings": "Settings"
+  },
+  "common": {
+    "add": "Add",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "all": "All",
+    "actions": "Actions",
+    "status": "Status",
+    "close": "Close",
+    "confirm": "Confirm",
+    "today": "Today",
+    "viewAll": "View all",
+    "noResults": "Nothing here yet",
+    "resetDemo": "Reset demo data",
+    "language": "Language",
+    "saved": "Saved",
+    "deleted": "Deleted",
+    "sent": "Sent",
+    "copied": "Copied to clipboard"
+  }
+}

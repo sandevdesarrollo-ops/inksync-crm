@@ -1,0 +1,66 @@
+{
+  "settings": {
+    "title": "Settings",
+    "description": "Studio profile, business rules and preferences.",
+    "profile": {
+      "title": "Studio profile",
+      "description": "How your studio appears on proposals and messages.",
+      "studioName": "Studio name",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "savedToast": "Studio profile saved"
+    },
+    "business": {
+      "title": "Business rules",
+      "description": "Defaults used across calendar, proposals and deposits.",
+      "openTime": "Opening time",
+      "closeTime": "Closing time",
+      "defaultSessionMinutes": "Default session (minutes)",
+      "depositPercent": "Deposit (%)",
+      "currency": "Currency",
+      "savedToast": "Business rules saved"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "What the studio gets pinged about.",
+      "appointmentReminders": "Appointment reminders",
+      "appointmentRemindersHint": "Remind clients before their session.",
+      "lowStock": "Low stock alerts",
+      "lowStockHint": "Warn when inventory drops below minimum.",
+      "newClients": "New client alerts",
+      "newClientsHint": "Notify when a new client signs up.",
+      "updatedToast": "Notification preferences updated"
+    },
+    "language": {
+      "title": "Language",
+      "description": "Interface language for the whole app.",
+      "changedToast": "Language updated"
+    },
+    "integrations": {
+      "title": "Integrations",
+      "description": "Channels and services InkSync will connect to.",
+      "comingSoon": "Coming soon — connects in the hosted version",
+      "connect": "Connect",
+      "instagram": "Instagram",
+      "instagramHint": "DMs and flash post engagement",
+      "whatsapp": "WhatsApp",
+      "whatsappHint": "Client chat and aftercare check-ins",
+      "facebook": "Facebook",
+      "facebookHint": "Page messages and reviews",
+      "stripe": "Stripe",
+      "stripeHint": "Deposits and payment links",
+      "googleCalendar": "Google Calendar",
+      "googleCalendarHint": "Two-way appointment sync"
+    },
+    "danger": {
+      "title": "Danger zone",
+      "description": "Irreversible actions live here — tread carefully.",
+      "resetTitle": "Reset demo data?",
+      "resetDescription": "This wipes every change you made and restores the original sample studio — clients, appointments, inventory and all.",
+      "resetHint": "Restores the original sample content: clients, appointments, designs, inventory and settings.",
+      "reset": "Reset demo data",
+      "resetToast": "Demo data restored"
+    }
+  }
+}

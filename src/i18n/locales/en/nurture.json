@@ -1,0 +1,65 @@
+{
+  "nurture": {
+    "title": "Nurture",
+    "description": "Automated messages that bring clients back through the door.",
+    "newCampaign": "New campaign",
+    "channel": {
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "card": {
+      "active": "Active",
+      "paused": "Paused",
+      "sent": "Sent",
+      "opened": "Opened",
+      "openRate": "Open rate",
+      "template": "Template",
+      "trigger": "Trigger"
+    },
+    "toggle": {
+      "activated": "Campaign activated",
+      "paused": "Campaign paused"
+    },
+    "edit": {
+      "titleNew": "New campaign",
+      "titleEdit": "Edit campaign",
+      "subtitle": "Automated outreach with a personal touch.",
+      "name": "Campaign name",
+      "namePlaceholder": "e.g. Aftercare check-in",
+      "trigger": "Trigger",
+      "triggerPlaceholder": "e.g. 3 days after appointment",
+      "channelLabel": "Channel",
+      "template": "Message template",
+      "templatePlaceholder": "Hey {{name}}! …",
+      "placeholderHint": "Use {{name}} for the client and {{artist}} for their preferred artist.",
+      "save": "Save campaign",
+      "create": "Create campaign",
+      "saved": "Campaign saved",
+      "created": "Campaign created"
+    },
+    "delete": {
+      "title": "Delete campaign?",
+      "text": "\"{{name}}\" will be removed. This can't be undone.",
+      "confirm": "Delete",
+      "deleted": "Campaign deleted"
+    },
+    "eligible": {
+      "title": "Eligible now",
+      "subtitle": "Clients your campaigns should reach today.",
+      "winback": "Win-back",
+      "winbackReason": "Quiet for {{days}} days",
+      "aftercare": "Aftercare",
+      "aftercareReason": "Session completed {{time}}",
+      "queueSend": "Queue send",
+      "queued": "Queued",
+      "queuedToast": "Message queued",
+      "queuedToastDesc": "{{name}} added to the \"{{campaign}}\" send queue (simulated).",
+      "empty": "No one is eligible right now — your clients are fresh and inked."
+    },
+    "empty": {
+      "title": "No campaigns yet",
+      "hint": "Set up an automated message to keep clients coming back.",
+      "action": "New campaign"
+    }
+  }
+}

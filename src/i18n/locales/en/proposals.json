@@ -1,0 +1,68 @@
+{
+  "proposals": {
+    "title": "Proposals",
+    "description": "Quotes and deposit links — from draft to booked.",
+    "newProposal": "New proposal",
+    "pipeline": "Pipeline",
+    "status": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "deposit_paid": "Deposit paid",
+      "accepted": "Accepted",
+      "expired": "Expired"
+    },
+    "client": "Client",
+    "artist": "Artist",
+    "amount": "Amount",
+    "deposit": "Deposit",
+    "sentDate": "Sent {{date}}",
+    "notSent": "Not sent yet",
+    "notes": "Notes",
+    "actions": {
+      "send": "Send",
+      "markDepositPaid": "Mark deposit paid",
+      "markExpired": "Mark expired",
+      "markAccepted": "Mark accepted",
+      "copyLink": "Copy deposit link",
+      "delete": "Delete"
+    },
+    "toast": {
+      "sent": "Proposal sent",
+      "sentDesc": "Deposit link generated for {{client}}.",
+      "depositPaid": "Deposit marked as paid",
+      "expired": "Proposal marked as expired",
+      "accepted": "Proposal accepted",
+      "created": "Proposal created as draft",
+      "deleted": "Proposal deleted",
+      "linkCopied": "Deposit link copied"
+    },
+    "activity": {
+      "sent": "Proposal \"{{title}}\" sent to {{client}} ({{amount}})."
+    },
+    "deleteConfirm": {
+      "title": "Delete this proposal?",
+      "text": "\"{{title}}\" will be removed permanently. This cannot be undone."
+    },
+    "dialog": {
+      "title": "New proposal",
+      "subtitle": "Draft a quote — you can send it when it's ready.",
+      "client": "Client",
+      "clientPlaceholder": "Select a client",
+      "artist": "Artist",
+      "artistPlaceholder": "Select an artist",
+      "proposalTitle": "Title",
+      "titlePlaceholder": "e.g. Blackwork back piece — 4 sessions",
+      "amount": "Amount",
+      "deposit": "Deposit ({{percent}}% suggested)",
+      "notes": "Notes",
+      "notesPlaceholder": "Sessions, design work, special terms…",
+      "create": "Create draft"
+    },
+    "empty": {
+      "title": "No proposals here",
+      "filtered": "Nothing matches this status. Try another filter.",
+      "text": "Draft your first quote and send a deposit link.",
+      "cta": "New proposal"
+    }
+  }
+}

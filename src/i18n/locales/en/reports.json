@@ -1,0 +1,53 @@
+{
+  "reports": {
+    "title": "Reports",
+    "description": "Monthly performance: revenue, sessions and client loyalty.",
+    "exportCsv": "Export CSV",
+    "exported": "Appointments exported as CSV.",
+    "kpis": {
+      "revenueMonth": "Revenue this month",
+      "revenueCaption": "Completed sessions + paid deposits",
+      "avgTicket": "Avg ticket",
+      "avgTicketCaption": "Per completed session",
+      "completedSessions": "Completed sessions",
+      "completedCaption": "All time",
+      "retention": "Returning clients",
+      "retentionCaption": "Clients with more than one visit"
+    },
+    "charts": {
+      "revenueByMonth": "Revenue by month",
+      "revenueByMonthCaption": "Completed sessions, last 6 months",
+      "revenue": "Revenue",
+      "revenueByArtist": "Revenue by artist",
+      "revenueByArtistCaption": "From completed sessions",
+      "byStatus": "Appointments by status",
+      "byStatusCaption": "All appointments",
+      "appointments": "Appointments"
+    },
+    "topClients": {
+      "title": "Top clients",
+      "caption": "Ranked by total spent",
+      "client": "Client",
+      "visits": "Visits",
+      "totalSpent": "Total spent",
+      "preferredArtist": "Preferred artist",
+      "empty": "No client data yet."
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "pending": "Pending",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "csv": {
+      "date": "Date",
+      "client": "Client",
+      "artist": "Artist",
+      "title": "Title",
+      "duration": "Duration (min)",
+      "price": "Price",
+      "deposit": "Deposit",
+      "status": "Status"
+    }
+  }
+}

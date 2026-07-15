@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "title": "Messages",
+    "description": "Every DM in one inbox — Instagram, WhatsApp and Facebook.",
+    "filters": {
+      "all": "All",
+      "unread": "Unread",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook"
+    },
+    "conversations": "Conversations",
+    "unreadCount": "{{count}} unread",
+    "you": "You",
+    "viewProfile": "View profile",
+    "selectConversation": "Pick a conversation",
+    "selectConversationText": "Choose a chat on the left to read and reply.",
+    "emptyList": "No conversations here",
+    "emptyListText": "Nothing matches this filter yet.",
+    "back": "Back",
+    "composerPlaceholder": "Write a reply… (Enter to send, Shift+Enter for a new line)",
+    "send": "Send",
+    "messageSent": "Reply sent",
+    "quickReplies": {
+      "label": "Quick replies",
+      "bookingConfirm": "You're booked in! See you at the studio — bring an ID and eat something beforehand.",
+      "aftercare": "Aftercare reminder: keep it clean, moisturize 2x a day, no sun or pools for 2 weeks. Send a photo if anything looks off.",
+      "depositReminder": "Friendly reminder: your deposit link is still open. Your slot is confirmed as soon as it's paid."
+    },
+    "quickReplyNames": {
+      "bookingConfirm": "Booking confirm",
+      "aftercare": "Aftercare",
+      "depositReminder": "Deposit reminder"
+    },
+    "syncFootnote": "Live channel sync with Instagram, WhatsApp and Facebook connects in Settings → Integrations — it's on the roadmap."
+  }
+}

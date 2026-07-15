@@ -1,0 +1,69 @@
+{
+  "calendar": {
+    "title": "Calendar",
+    "description": "Appointments and bookings across the studio",
+    "newAppointment": "New appointment",
+    "views": { "month": "Month", "week": "Week" },
+    "prevPeriod": "Previous",
+    "nextPeriod": "Next",
+    "allArtists": "All artists",
+    "filterByArtist": "Filter by artist",
+    "more": "+{{count}} more",
+    "appointments_one": "{{count}} appointment",
+    "appointments_other": "{{count}} appointments",
+    "emptyDay": "Nothing booked for this day.",
+    "emptyDayAction": "Book a session",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "form": {
+      "client": "Client",
+      "selectClient": "Select a client",
+      "artist": "Artist",
+      "selectArtist": "Select an artist",
+      "titleLabel": "Title",
+      "titlePlaceholder": "e.g. Fine line floral — forearm",
+      "date": "Date",
+      "time": "Time",
+      "duration": "Duration (min)",
+      "price": "Price",
+      "deposit": "Deposit",
+      "depositHint": "{{percent}}% of price, editable",
+      "notes": "Notes",
+      "notesPlaceholder": "Stencil status, placement, reminders…",
+      "create": "Create appointment"
+    },
+    "detail": {
+      "clientInfo": "Client",
+      "artist": "Artist",
+      "schedule": "Schedule",
+      "price": "Price",
+      "deposit": "Deposit",
+      "notes": "Notes",
+      "noNotes": "No notes for this appointment.",
+      "confirm": "Confirm",
+      "complete": "Complete",
+      "cancelAppointment": "Cancel appointment",
+      "delete": "Delete",
+      "confirmDelete": "Really delete?",
+      "minutes": "{{count}} min"
+    },
+    "toast": {
+      "created": "Appointment booked",
+      "createdDesc": "{{title}} on {{date}}",
+      "missingFields": "Missing details",
+      "missingFieldsDesc": "Client, artist, title, date and time are required.",
+      "statusUpdated": "Status updated",
+      "statusUpdatedDesc": "Appointment marked as {{status}}.",
+      "deleted": "Appointment deleted"
+    },
+    "activity": {
+      "created": "Appointment booked: {{client}} — {{title}}.",
+      "statusChanged": "Appointment {{status}}: {{client}} — {{title}}.",
+      "deleted": "Appointment deleted: {{client}} — {{title}}."
+    }
+  }
+}

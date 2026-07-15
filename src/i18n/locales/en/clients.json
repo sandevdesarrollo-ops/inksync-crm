@@ -1,0 +1,92 @@
+{
+  "clients": {
+    "title": "Clients",
+    "description": "Every person who trusts your needles — profiles, history and spend.",
+    "addClient": "Add client",
+    "stats": {
+      "total": "Total clients",
+      "vips": "VIPs",
+      "newThisMonth": "New this month",
+      "inactive": "Inactive"
+    },
+    "searchPlaceholder": "Search by name, email or phone…",
+    "filters": {
+      "all": "All",
+      "new": "New",
+      "active": "Active",
+      "vip": "VIP",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "client": "Client",
+      "phone": "Phone",
+      "visits": "Visits",
+      "spent": "Total spent",
+      "artist": "Preferred artist",
+      "status": "Status",
+      "lastVisit": "Last visit"
+    },
+    "status": {
+      "new": "New",
+      "active": "Active",
+      "vip": "VIP",
+      "inactive": "Inactive"
+    },
+    "empty": {
+      "title": "No clients match",
+      "hint": "Try a different search or filter, or add your first client.",
+      "action": "Clear filters"
+    },
+    "detail": {
+      "clientSince": "Client since {{date}}",
+      "contact": "Contact",
+      "styles": "Styles",
+      "visits": "Visits",
+      "totalSpent": "Total spent",
+      "lastVisit": "Last visit",
+      "never": "Never",
+      "notes": "Notes",
+      "notesPlaceholder": "Allergies, preferences, project plans…",
+      "notesSaved": "Notes saved",
+      "appointments": "Appointment history",
+      "noAppointments": "No appointments yet.",
+      "proposals": "Proposals",
+      "noProposals": "No proposals yet.",
+      "bookSession": "Book session",
+      "sendMessage": "Send message",
+      "statusChanged": "Status updated",
+      "apptStatus": {
+        "confirmed": "Confirmed",
+        "pending": "Pending",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "proposalStatus": {
+        "draft": "Draft",
+        "sent": "Sent",
+        "deposit_paid": "Deposit paid",
+        "accepted": "Accepted",
+        "expired": "Expired"
+      }
+    },
+    "add": {
+      "title": "Add client",
+      "subtitle": "Create a profile for a new client.",
+      "name": "Full name",
+      "namePlaceholder": "e.g. Nina Alvarez",
+      "email": "Email",
+      "phone": "Phone",
+      "artist": "Preferred artist",
+      "artistPlaceholder": "Pick an artist",
+      "noArtist": "No preference",
+      "styles": "Styles",
+      "stylesPlaceholder": "Fine line, Blackwork…",
+      "notes": "Notes",
+      "notesPlaceholder": "Anything worth remembering…",
+      "submit": "Add client",
+      "created": "Client added",
+      "createdDesc": "{{name}} is now in your client list.",
+      "activityLog": "New client added: {{name}}"
+    }
+  }
+}

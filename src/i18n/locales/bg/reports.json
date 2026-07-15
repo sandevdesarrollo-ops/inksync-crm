@@ -1,0 +1,53 @@
+{
+  "reports": {
+    "title": "Отчети",
+    "description": "Месечни резултати: приходи, сесии и лоялност на клиентите.",
+    "exportCsv": "Експорт в CSV",
+    "exported": "Часовете са експортирани като CSV.",
+    "kpis": {
+      "revenueMonth": "Приходи този месец",
+      "revenueCaption": "Завършени сесии + платени депозити",
+      "avgTicket": "Среден чек",
+      "avgTicketCaption": "На завършена сесия",
+      "completedSessions": "Завършени сесии",
+      "completedCaption": "За цялото време",
+      "retention": "Завръщащи се клиенти",
+      "retentionCaption": "Клиенти с повече от едно посещение"
+    },
+    "charts": {
+      "revenueByMonth": "Приходи по месеци",
+      "revenueByMonthCaption": "Завършени сесии, последните 6 месеца",
+      "revenue": "Приходи",
+      "revenueByArtist": "Приходи по артисти",
+      "revenueByArtistCaption": "От завършени сесии",
+      "byStatus": "Часове по статус",
+      "byStatusCaption": "Всички часове",
+      "appointments": "Часове"
+    },
+    "topClients": {
+      "title": "Топ клиенти",
+      "caption": "Подредени по общо похарчено",
+      "client": "Клиент",
+      "visits": "Посещения",
+      "totalSpent": "Общо похарчено",
+      "preferredArtist": "Предпочитан артист",
+      "empty": "Все още няма данни за клиенти."
+    },
+    "status": {
+      "confirmed": "Потвърден",
+      "pending": "Изчакващ",
+      "completed": "Завършен",
+      "cancelled": "Отменен"
+    },
+    "csv": {
+      "date": "Дата",
+      "client": "Клиент",
+      "artist": "Артист",
+      "title": "Заглавие",
+      "duration": "Продължителност (мин)",
+      "price": "Цена",
+      "deposit": "Депозит",
+      "status": "Статус"
+    }
+  }
+}

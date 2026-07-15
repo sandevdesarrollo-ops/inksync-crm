@@ -1,0 +1,60 @@
+{
+  "inventory": {
+    "title": "Inventory",
+    "description": "Track supplies, stock levels and reorders",
+    "addProduct": "Add product",
+    "exportCsv": "Export CSV",
+    "searchPlaceholder": "Search products…",
+    "lowStockAlert_one": "{{count}} item is below minimum stock",
+    "lowStockAlert_other": "{{count}} items are below minimum stock",
+    "categories": {
+      "all": "All",
+      "inks": "Inks",
+      "needles": "Needles",
+      "machines": "Machines",
+      "aftercare": "Aftercare",
+      "hygiene": "Hygiene",
+      "supplies": "Supplies"
+    },
+    "table": {
+      "product": "Product",
+      "category": "Category",
+      "stock": "Stock",
+      "price": "Price",
+      "supplier": "Supplier",
+      "actions": "Actions",
+      "min": "min {{count}}"
+    },
+    "form": {
+      "addTitle": "Add product",
+      "addDescription": "Add a new product to the studio inventory.",
+      "editTitle": "Edit product",
+      "editDescription": "Update the product details.",
+      "name": "Name",
+      "namePlaceholder": "e.g. Premium Black Ink 30ml",
+      "brand": "Brand",
+      "brandPlaceholder": "e.g. Eternal Ink",
+      "category": "Category",
+      "selectCategory": "Select category",
+      "stock": "Stock",
+      "minStock": "Minimum stock",
+      "price": "Price",
+      "supplier": "Supplier",
+      "supplierPlaceholder": "e.g. Killer Ink",
+      "save": "Save product",
+      "added": "Product added to inventory",
+      "updated": "Product updated"
+    },
+    "decrease": "Decrease stock",
+    "increase": "Increase stock",
+    "deleteTitle": "Delete this product?",
+    "deleteText": "\"{{name}}\" will be removed from the inventory. This cannot be undone.",
+    "deleted": "Product deleted",
+    "lowStockActivity": "{{name}} dropped below minimum stock: {{stock}} left (min {{min}}). Reorder from {{supplier}}.",
+    "empty": {
+      "title": "No products found",
+      "text": "Try another search or category.",
+      "clear": "Clear filters"
+    }
+  }
+}

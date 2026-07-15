@@ -1,0 +1,53 @@
+{
+  "dashboard": {
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "subtitle": "Here's what's happening at {{studio}} today.",
+    "kpis": {
+      "revenueMonth": "Revenue this month",
+      "revenueTrendUp": "+{{pct}}% vs last month",
+      "revenueTrendDown": "{{pct}}% vs last month",
+      "revenueTrendFlat": "Level with last month",
+      "apptsToday": "Appointments today",
+      "apptsConfirmed": "{{n}} confirmed",
+      "newClients": "New clients",
+      "newClientsCaption": "Joined this month",
+      "lowStock": "Low stock",
+      "lowStockCaption": "Items below minimum — review"
+    },
+    "week": {
+      "title": "This week",
+      "caption": "Appointments per day",
+      "appointments": "Appointments"
+    },
+    "schedule": {
+      "title": "Today's schedule",
+      "empty": "No sessions booked for today.",
+      "openCalendar": "Open calendar",
+      "with": "with {{artist}}"
+    },
+    "attention": {
+      "title": "Needs attention",
+      "empty": "All clear — nothing needs your attention.",
+      "goToFocus": "Go to Focus"
+    },
+    "messages": {
+      "title": "Unread messages",
+      "empty": "Inbox is all caught up.",
+      "unread": "{{n}} unread",
+      "openInbox": "Open inbox"
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "pending": "Pending",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    }
+  }
+}

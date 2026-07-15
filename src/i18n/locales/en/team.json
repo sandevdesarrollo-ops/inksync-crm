@@ -1,0 +1,67 @@
+{
+  "team": {
+    "title": "Team",
+    "description": "Artists, schedules and rates — the people behind the needles.",
+    "addMember": "Add member",
+    "editMember": "Edit member",
+    "roles": {
+      "owner": "Owner",
+      "artist": "Artist",
+      "apprentice": "Apprentice"
+    },
+    "active": "Active",
+    "days": {
+      "mon": "M",
+      "tue": "T",
+      "wed": "W",
+      "thu": "T",
+      "fri": "F",
+      "sat": "S",
+      "sun": "S"
+    },
+    "daysFull": {
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
+    },
+    "weeklySchedule": "Weekly schedule",
+    "apptsThisMonth": "Appointments",
+    "revenueThisMonth": "Revenue",
+    "thisMonth": "this month",
+    "perHour": "/h",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "e.g. Alex Rivera",
+      "role": "Role",
+      "styles": "Styles",
+      "stylesPlaceholder": "Fine line, Blackwork",
+      "stylesHint": "Separate styles with commas",
+      "phone": "Phone",
+      "email": "Email",
+      "hourlyRate": "Hourly rate",
+      "workingDays": "Working days"
+    },
+    "addTitle": "Add team member",
+    "addDescription": "New artist or apprentice joining the studio.",
+    "editDescription": "Update details, rate or schedule.",
+    "removeTitle": "Remove {{name}}?",
+    "removeDescription": "They will disappear from the roster. Past appointments stay in the history.",
+    "remove": "Remove",
+    "ownerBlockedTitle": "The owner stays",
+    "ownerBlockedDescription": "You can't remove the studio owner. Transfer ownership first.",
+    "addedToast": "{{name}} joined the team",
+    "updatedToast": "{{name}} updated",
+    "removedToast": "{{name}} removed from the team",
+    "activatedToast": "{{name}} is now active",
+    "deactivatedToast": "{{name}} set to inactive",
+    "activityAdded": "New team member: {{name}} ({{role}})",
+    "activityRemoved": "Team member removed: {{name}}",
+    "emptyTitle": "No team members yet",
+    "emptyDescription": "Add your first artist to start scheduling work.",
+    "nameRequired": "A name is required"
+  }
+}
