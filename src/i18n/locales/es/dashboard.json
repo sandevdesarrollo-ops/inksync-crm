@@ -1,0 +1,53 @@
+{
+  "dashboard": {
+    "greetingMorning": "Buenos días",
+    "greetingAfternoon": "Buenas tardes",
+    "greetingEvening": "Buenas noches",
+    "subtitle": "Esto es lo que pasa hoy en {{studio}}.",
+    "kpis": {
+      "revenueMonth": "Ingresos del mes",
+      "revenueTrendUp": "+{{pct}} % vs el mes pasado",
+      "revenueTrendDown": "{{pct}} % vs el mes pasado",
+      "revenueTrendFlat": "Igual que el mes pasado",
+      "apptsToday": "Citas de hoy",
+      "apptsConfirmed": "{{n}} confirmadas",
+      "newClients": "Clientes nuevos",
+      "newClientsCaption": "Se unieron este mes",
+      "lowStock": "Stock bajo",
+      "lowStockCaption": "Artículos bajo mínimo — revisar"
+    },
+    "week": {
+      "title": "Esta semana",
+      "caption": "Citas por día",
+      "appointments": "Citas"
+    },
+    "schedule": {
+      "title": "Agenda de hoy",
+      "empty": "No hay sesiones reservadas para hoy.",
+      "openCalendar": "Abrir calendario",
+      "with": "con {{artist}}"
+    },
+    "attention": {
+      "title": "Requiere atención",
+      "empty": "Todo en orden — nada pendiente.",
+      "goToFocus": "Ir a Enfoque"
+    },
+    "messages": {
+      "title": "Mensajes sin leer",
+      "empty": "Bandeja de entrada al día.",
+      "unread": "{{n}} sin leer",
+      "openInbox": "Abrir mensajes"
+    },
+    "status": {
+      "confirmed": "Confirmada",
+      "pending": "Pendiente",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    },
+    "priority": {
+      "high": "Alta",
+      "medium": "Media",
+      "low": "Baja"
+    }
+  }
+}

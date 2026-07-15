@@ -1,0 +1,66 @@
+{
+  "settings": {
+    "title": "Ajustes",
+    "description": "Perfil del estudio, reglas de negocio y preferencias.",
+    "profile": {
+      "title": "Perfil del estudio",
+      "description": "Cómo aparece tu estudio en propuestas y mensajes.",
+      "studioName": "Nombre del estudio",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "savedToast": "Perfil del estudio guardado"
+    },
+    "business": {
+      "title": "Reglas de negocio",
+      "description": "Valores por defecto para calendario, propuestas y depósitos.",
+      "openTime": "Hora de apertura",
+      "closeTime": "Hora de cierre",
+      "defaultSessionMinutes": "Sesión por defecto (minutos)",
+      "depositPercent": "Depósito (%)",
+      "currency": "Moneda",
+      "savedToast": "Reglas de negocio guardadas"
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "description": "De qué se entera el estudio.",
+      "appointmentReminders": "Recordatorios de citas",
+      "appointmentRemindersHint": "Recuerda a los clientes antes de su sesión.",
+      "lowStock": "Alertas de stock bajo",
+      "lowStockHint": "Avisa cuando el inventario baje del mínimo.",
+      "newClients": "Alertas de clientes nuevos",
+      "newClientsHint": "Notifica cuando se registra un cliente nuevo.",
+      "updatedToast": "Preferencias de notificación actualizadas"
+    },
+    "language": {
+      "title": "Idioma",
+      "description": "Idioma de la interfaz para toda la aplicación.",
+      "changedToast": "Idioma actualizado"
+    },
+    "integrations": {
+      "title": "Integraciones",
+      "description": "Canales y servicios a los que InkSync se conectará.",
+      "comingSoon": "Próximamente — se conecta en la versión alojada",
+      "connect": "Conectar",
+      "instagram": "Instagram",
+      "instagramHint": "Mensajes directos e interacción con publicaciones flash",
+      "whatsapp": "WhatsApp",
+      "whatsappHint": "Chat con clientes y seguimiento del cuidado posterior",
+      "facebook": "Facebook",
+      "facebookHint": "Mensajes de la página y reseñas",
+      "stripe": "Stripe",
+      "stripeHint": "Depósitos y enlaces de pago",
+      "googleCalendar": "Google Calendar",
+      "googleCalendarHint": "Sincronización de citas en ambos sentidos"
+    },
+    "danger": {
+      "title": "Zona de peligro",
+      "description": "Aquí viven las acciones irreversibles — pisa con cuidado.",
+      "resetTitle": "¿Restablecer los datos de demostración?",
+      "resetDescription": "Esto borra todos tus cambios y restaura el estudio de ejemplo original — clientes, citas, inventario y todo lo demás.",
+      "resetHint": "Restaura el contenido de ejemplo original: clientes, citas, diseños, inventario y ajustes.",
+      "reset": "Restablecer datos de demo",
+      "resetToast": "Datos de demostración restaurados"
+    }
+  }
+}

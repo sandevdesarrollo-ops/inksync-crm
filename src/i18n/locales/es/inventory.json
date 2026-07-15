@@ -1,0 +1,60 @@
+{
+  "inventory": {
+    "title": "Inventario",
+    "description": "Controla los suministros, el stock y los pedidos",
+    "addProduct": "Añadir producto",
+    "exportCsv": "Exportar CSV",
+    "searchPlaceholder": "Buscar productos…",
+    "lowStockAlert_one": "{{count}} producto está por debajo del stock mínimo",
+    "lowStockAlert_other": "{{count}} productos están por debajo del stock mínimo",
+    "categories": {
+      "all": "Todo",
+      "inks": "Tintas",
+      "needles": "Agujas",
+      "machines": "Máquinas",
+      "aftercare": "Cuidado posterior",
+      "hygiene": "Higiene",
+      "supplies": "Suministros"
+    },
+    "table": {
+      "product": "Producto",
+      "category": "Categoría",
+      "stock": "Stock",
+      "price": "Precio",
+      "supplier": "Proveedor",
+      "actions": "Acciones",
+      "min": "mín. {{count}}"
+    },
+    "form": {
+      "addTitle": "Añadir producto",
+      "addDescription": "Añade un nuevo producto al inventario del estudio.",
+      "editTitle": "Editar producto",
+      "editDescription": "Actualiza los datos del producto.",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Tinta negra premium 30 ml",
+      "brand": "Marca",
+      "brandPlaceholder": "p. ej. Eternal Ink",
+      "category": "Categoría",
+      "selectCategory": "Elige una categoría",
+      "stock": "Stock",
+      "minStock": "Stock mínimo",
+      "price": "Precio",
+      "supplier": "Proveedor",
+      "supplierPlaceholder": "p. ej. Killer Ink",
+      "save": "Guardar producto",
+      "added": "Producto añadido al inventario",
+      "updated": "Producto actualizado"
+    },
+    "decrease": "Reducir stock",
+    "increase": "Aumentar stock",
+    "deleteTitle": "¿Eliminar este producto?",
+    "deleteText": "«{{name}}» se eliminará del inventario. Esta acción no se puede deshacer.",
+    "deleted": "Producto eliminado",
+    "lowStockActivity": "{{name}} bajó del stock mínimo: quedan {{stock}} (mín. {{min}}). Haz un pedido a {{supplier}}.",
+    "empty": {
+      "title": "No se encontraron productos",
+      "text": "Prueba con otra búsqueda o categoría.",
+      "clear": "Limpiar filtros"
+    }
+  }
+}

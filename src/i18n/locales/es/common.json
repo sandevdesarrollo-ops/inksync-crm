@@ -1,0 +1,42 @@
+{
+  "app": { "name": "InkSync", "tagline": "CRM de estudio" },
+  "nav": {
+    "overview": "Resumen",
+    "dashboard": "Panel",
+    "activity": "Enfoque",
+    "reports": "Informes",
+    "studio": "Estudio",
+    "calendar": "Calendario",
+    "clients": "Clientes",
+    "designs": "Diseños",
+    "proposals": "Propuestas",
+    "messages": "Mensajes",
+    "nurture": "Fidelización",
+    "operations": "Operaciones",
+    "inventory": "Inventario",
+    "team": "Equipo",
+    "settings": "Configuración"
+  },
+  "common": {
+    "add": "Añadir",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "search": "Buscar",
+    "all": "Todos",
+    "actions": "Acciones",
+    "status": "Estado",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "today": "Hoy",
+    "viewAll": "Ver todo",
+    "noResults": "Nada por aquí todavía",
+    "resetDemo": "Restablecer datos de demo",
+    "language": "Idioma",
+    "saved": "Guardado",
+    "deleted": "Eliminado",
+    "sent": "Enviado",
+    "copied": "Copiado al portapapeles"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "title": "Enfoque",
+    "description": "Dónde debería ir tu atención hoy, ordenado por lo que más importa.",
+    "filters": {
+      "all": "Todo",
+      "proposal": "Propuestas",
+      "inventory": "Inventario",
+      "appointment": "Citas",
+      "message": "Mensajes",
+      "client": "Clientes"
+    },
+    "priority": {
+      "high": "Prioridad alta",
+      "medium": "Prioridad media",
+      "low": "Prioridad baja"
+    },
+    "go": "Ir",
+    "markDone": "Marcar como hecho",
+    "completed": "Completado",
+    "clearCompleted": "Limpiar completados",
+    "clearTitle": "¿Limpiar los elementos completados?",
+    "clearDescription": "Esto elimina de forma permanente {{count}} elementos completados de la lista.",
+    "clear": "Limpiar",
+    "clearedToast": "Elementos completados eliminados",
+    "doneToast": "Genial — una cosa menos",
+    "allClearTitle": "Todo en orden — hoy el estudio funciona solo.",
+    "allClearDescription": "Todo está resuelto. Disfruta de la calma o echa un vistazo al calendario.",
+    "goToCalendar": "Abrir calendario",
+    "emptyFilterTitle": "Nada por aquí",
+    "emptyFilterDescription": "No hay elementos pendientes en esta categoría ahora mismo.",
+    "showAll": "Mostrar todo"
+  }
+}

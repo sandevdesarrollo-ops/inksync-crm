@@ -1,0 +1,65 @@
+{
+  "nurture": {
+    "title": "Fidelización",
+    "description": "Mensajes automáticos que hacen volver a tus clientes al estudio.",
+    "newCampaign": "Nueva campaña",
+    "channel": {
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "card": {
+      "active": "Activa",
+      "paused": "Pausada",
+      "sent": "Enviados",
+      "opened": "Abiertos",
+      "openRate": "Tasa de apertura",
+      "template": "Plantilla",
+      "trigger": "Disparador"
+    },
+    "toggle": {
+      "activated": "Campaña activada",
+      "paused": "Campaña pausada"
+    },
+    "edit": {
+      "titleNew": "Nueva campaña",
+      "titleEdit": "Editar campaña",
+      "subtitle": "Mensajes automáticos con un toque personal.",
+      "name": "Nombre de la campaña",
+      "namePlaceholder": "p. ej. Seguimiento de cuidados",
+      "trigger": "Disparador",
+      "triggerPlaceholder": "p. ej. 3 días después de la cita",
+      "channelLabel": "Canal",
+      "template": "Plantilla del mensaje",
+      "templatePlaceholder": "¡Hola {{name}}! …",
+      "placeholderHint": "Usa {{name}} para el cliente y {{artist}} para su artista preferido.",
+      "save": "Guardar campaña",
+      "create": "Crear campaña",
+      "saved": "Campaña guardada",
+      "created": "Campaña creada"
+    },
+    "delete": {
+      "title": "¿Eliminar la campaña?",
+      "text": "«{{name}}» se eliminará. Esto no se puede deshacer.",
+      "confirm": "Eliminar",
+      "deleted": "Campaña eliminada"
+    },
+    "eligible": {
+      "title": "Listos ahora",
+      "subtitle": "Clientes a los que tus campañas deberían llegar hoy.",
+      "winback": "Recuperación",
+      "winbackReason": "Sin señales desde hace {{days}} días",
+      "aftercare": "Cuidados",
+      "aftercareReason": "Sesión completada {{time}}",
+      "queueSend": "Poner en cola",
+      "queued": "En cola",
+      "queuedToast": "Mensaje en cola",
+      "queuedToastDesc": "{{name}} añadido a la cola de envío de «{{campaign}}» (simulado).",
+      "empty": "Nadie cumple los criterios ahora mismo — tus clientes están recién tatuados."
+    },
+    "empty": {
+      "title": "Aún no hay campañas",
+      "hint": "Configura un mensaje automático para que tus clientes vuelvan.",
+      "action": "Nueva campaña"
+    }
+  }
+}

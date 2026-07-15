@@ -1,0 +1,92 @@
+{
+  "clients": {
+    "title": "Clientes",
+    "description": "Cada persona que confía en tus agujas — perfiles, historial y gasto.",
+    "addClient": "Añadir cliente",
+    "stats": {
+      "total": "Clientes totales",
+      "vips": "VIP",
+      "newThisMonth": "Nuevos este mes",
+      "inactive": "Inactivos"
+    },
+    "searchPlaceholder": "Buscar por nombre, email o teléfono…",
+    "filters": {
+      "all": "Todos",
+      "new": "Nuevos",
+      "active": "Activos",
+      "vip": "VIP",
+      "inactive": "Inactivos"
+    },
+    "table": {
+      "client": "Cliente",
+      "phone": "Teléfono",
+      "visits": "Visitas",
+      "spent": "Gasto total",
+      "artist": "Artista preferido",
+      "status": "Estado",
+      "lastVisit": "Última visita"
+    },
+    "status": {
+      "new": "Nuevo",
+      "active": "Activo",
+      "vip": "VIP",
+      "inactive": "Inactivo"
+    },
+    "empty": {
+      "title": "Ningún cliente coincide",
+      "hint": "Prueba otra búsqueda u otro filtro, o añade tu primer cliente.",
+      "action": "Limpiar filtros"
+    },
+    "detail": {
+      "clientSince": "Cliente desde {{date}}",
+      "contact": "Contacto",
+      "styles": "Estilos",
+      "visits": "Visitas",
+      "totalSpent": "Gasto total",
+      "lastVisit": "Última visita",
+      "never": "Nunca",
+      "notes": "Notas",
+      "notesPlaceholder": "Alergias, preferencias, planes de proyecto…",
+      "notesSaved": "Notas guardadas",
+      "appointments": "Historial de citas",
+      "noAppointments": "Aún no hay citas.",
+      "proposals": "Presupuestos",
+      "noProposals": "Aún no hay presupuestos.",
+      "bookSession": "Reservar sesión",
+      "sendMessage": "Enviar mensaje",
+      "statusChanged": "Estado actualizado",
+      "apptStatus": {
+        "confirmed": "Confirmada",
+        "pending": "Pendiente",
+        "completed": "Completada",
+        "cancelled": "Cancelada"
+      },
+      "proposalStatus": {
+        "draft": "Borrador",
+        "sent": "Enviado",
+        "deposit_paid": "Señal pagada",
+        "accepted": "Aceptado",
+        "expired": "Caducado"
+      }
+    },
+    "add": {
+      "title": "Añadir cliente",
+      "subtitle": "Crea el perfil de un nuevo cliente.",
+      "name": "Nombre completo",
+      "namePlaceholder": "p. ej. Nina Álvarez",
+      "email": "Email",
+      "phone": "Teléfono",
+      "artist": "Artista preferido",
+      "artistPlaceholder": "Elige un artista",
+      "noArtist": "Sin preferencia",
+      "styles": "Estilos",
+      "stylesPlaceholder": "Fine line, Blackwork…",
+      "notes": "Notas",
+      "notesPlaceholder": "Cualquier cosa que valga la pena recordar…",
+      "submit": "Añadir cliente",
+      "created": "Cliente añadido",
+      "createdDesc": "{{name}} ya está en tu lista de clientes.",
+      "activityLog": "Nuevo cliente añadido: {{name}}"
+    }
+  }
+}

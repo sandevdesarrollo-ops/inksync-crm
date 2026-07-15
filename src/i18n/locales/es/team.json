@@ -1,0 +1,67 @@
+{
+  "team": {
+    "title": "Equipo",
+    "description": "Artistas, horarios y tarifas — la gente detrás de las agujas.",
+    "addMember": "Añadir miembro",
+    "editMember": "Editar miembro",
+    "roles": {
+      "owner": "Propietaria",
+      "artist": "Artista",
+      "apprentice": "Aprendiz"
+    },
+    "active": "Activo",
+    "days": {
+      "mon": "L",
+      "tue": "M",
+      "wed": "X",
+      "thu": "J",
+      "fri": "V",
+      "sat": "S",
+      "sun": "D"
+    },
+    "daysFull": {
+      "mon": "Lunes",
+      "tue": "Martes",
+      "wed": "Miércoles",
+      "thu": "Jueves",
+      "fri": "Viernes",
+      "sat": "Sábado",
+      "sun": "Domingo"
+    },
+    "weeklySchedule": "Horario semanal",
+    "apptsThisMonth": "Citas",
+    "revenueThisMonth": "Ingresos",
+    "thisMonth": "este mes",
+    "perHour": "/h",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Alex Rivera",
+      "role": "Rol",
+      "styles": "Estilos",
+      "stylesPlaceholder": "Línea fina, Blackwork",
+      "stylesHint": "Separa los estilos con comas",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "hourlyRate": "Tarifa por hora",
+      "workingDays": "Días de trabajo"
+    },
+    "addTitle": "Añadir miembro al equipo",
+    "addDescription": "Un nuevo artista o aprendiz se une al estudio.",
+    "editDescription": "Actualiza datos, tarifa u horario.",
+    "removeTitle": "¿Eliminar a {{name}}?",
+    "removeDescription": "Desaparecerá de la plantilla. Las citas pasadas se conservan en el historial.",
+    "remove": "Eliminar",
+    "ownerBlockedTitle": "El propietario se queda",
+    "ownerBlockedDescription": "No puedes eliminar al propietario del estudio. Transfiere la propiedad primero.",
+    "addedToast": "{{name}} se ha unido al equipo",
+    "updatedToast": "{{name}} actualizado",
+    "removedToast": "{{name}} eliminado del equipo",
+    "activatedToast": "{{name}} ahora está activo",
+    "deactivatedToast": "{{name}} marcado como inactivo",
+    "activityAdded": "Nuevo miembro del equipo: {{name}} ({{role}})",
+    "activityRemoved": "Miembro del equipo eliminado: {{name}}",
+    "emptyTitle": "Aún no hay miembros en el equipo",
+    "emptyDescription": "Añade tu primer artista para empezar a agendar trabajo.",
+    "nameRequired": "El nombre es obligatorio"
+  }
+}

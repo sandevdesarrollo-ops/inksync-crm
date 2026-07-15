@@ -1,0 +1,68 @@
+{
+  "proposals": {
+    "title": "Presupuestos",
+    "description": "Presupuestos y enlaces de depósito — del borrador a la reserva.",
+    "newProposal": "Nuevo presupuesto",
+    "pipeline": "Pipeline",
+    "status": {
+      "draft": "Borrador",
+      "sent": "Enviado",
+      "deposit_paid": "Depósito pagado",
+      "accepted": "Aceptado",
+      "expired": "Caducado"
+    },
+    "client": "Cliente",
+    "artist": "Artista",
+    "amount": "Importe",
+    "deposit": "Depósito",
+    "sentDate": "Enviado el {{date}}",
+    "notSent": "Aún sin enviar",
+    "notes": "Notas",
+    "actions": {
+      "send": "Enviar",
+      "markDepositPaid": "Marcar depósito pagado",
+      "markExpired": "Marcar como caducado",
+      "markAccepted": "Marcar como aceptado",
+      "copyLink": "Copiar enlace de depósito",
+      "delete": "Eliminar"
+    },
+    "toast": {
+      "sent": "Presupuesto enviado",
+      "sentDesc": "Enlace de depósito generado para {{client}}.",
+      "depositPaid": "Depósito marcado como pagado",
+      "expired": "Presupuesto marcado como caducado",
+      "accepted": "Presupuesto aceptado",
+      "created": "Presupuesto creado como borrador",
+      "deleted": "Presupuesto eliminado",
+      "linkCopied": "Enlace de depósito copiado"
+    },
+    "activity": {
+      "sent": "Presupuesto «{{title}}» enviado a {{client}} ({{amount}})."
+    },
+    "deleteConfirm": {
+      "title": "¿Eliminar este presupuesto?",
+      "text": "«{{title}}» se eliminará de forma permanente. Esta acción no se puede deshacer."
+    },
+    "dialog": {
+      "title": "Nuevo presupuesto",
+      "subtitle": "Prepara un presupuesto — podrás enviarlo cuando esté listo.",
+      "client": "Cliente",
+      "clientPlaceholder": "Selecciona un cliente",
+      "artist": "Artista",
+      "artistPlaceholder": "Selecciona un artista",
+      "proposalTitle": "Título",
+      "titlePlaceholder": "p. ej. Pieza de espalda en blackwork — 4 sesiones",
+      "amount": "Importe",
+      "deposit": "Depósito ({{percent}}% sugerido)",
+      "notes": "Notas",
+      "notesPlaceholder": "Sesiones, trabajo de diseño, condiciones especiales…",
+      "create": "Crear borrador"
+    },
+    "empty": {
+      "title": "No hay presupuestos",
+      "filtered": "Nada coincide con este estado. Prueba otro filtro.",
+      "text": "Crea tu primer presupuesto y envía un enlace de depósito.",
+      "cta": "Nuevo presupuesto"
+    }
+  }
+}

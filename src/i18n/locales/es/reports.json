@@ -1,0 +1,53 @@
+{
+  "reports": {
+    "title": "Informes",
+    "description": "Rendimiento mensual: ingresos, sesiones y fidelidad de clientes.",
+    "exportCsv": "Exportar CSV",
+    "exported": "Citas exportadas como CSV.",
+    "kpis": {
+      "revenueMonth": "Ingresos del mes",
+      "revenueCaption": "Sesiones completadas + señas cobradas",
+      "avgTicket": "Ticket medio",
+      "avgTicketCaption": "Por sesión completada",
+      "completedSessions": "Sesiones completadas",
+      "completedCaption": "Histórico total",
+      "retention": "Clientes que repiten",
+      "retentionCaption": "Clientes con más de una visita"
+    },
+    "charts": {
+      "revenueByMonth": "Ingresos por mes",
+      "revenueByMonthCaption": "Sesiones completadas, últimos 6 meses",
+      "revenue": "Ingresos",
+      "revenueByArtist": "Ingresos por artista",
+      "revenueByArtistCaption": "De sesiones completadas",
+      "byStatus": "Citas por estado",
+      "byStatusCaption": "Todas las citas",
+      "appointments": "Citas"
+    },
+    "topClients": {
+      "title": "Mejores clientes",
+      "caption": "Ordenados por gasto total",
+      "client": "Cliente",
+      "visits": "Visitas",
+      "totalSpent": "Gasto total",
+      "preferredArtist": "Artista preferido",
+      "empty": "Aún no hay datos de clientes."
+    },
+    "status": {
+      "confirmed": "Confirmada",
+      "pending": "Pendiente",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    },
+    "csv": {
+      "date": "Fecha",
+      "client": "Cliente",
+      "artist": "Artista",
+      "title": "Título",
+      "duration": "Duración (min)",
+      "price": "Precio",
+      "deposit": "Seña",
+      "status": "Estado"
+    }
+  }
+}

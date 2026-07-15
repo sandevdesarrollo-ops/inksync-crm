@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "title": "Mensajes",
+    "description": "Todos tus DMs en una sola bandeja — Instagram, WhatsApp y Facebook.",
+    "filters": {
+      "all": "Todos",
+      "unread": "No leídos",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook"
+    },
+    "conversations": "Conversaciones",
+    "unreadCount": "{{count}} sin leer",
+    "you": "Tú",
+    "viewProfile": "Ver perfil",
+    "selectConversation": "Elige una conversación",
+    "selectConversationText": "Selecciona un chat a la izquierda para leer y responder.",
+    "emptyList": "No hay conversaciones",
+    "emptyListText": "Nada coincide con este filtro por ahora.",
+    "back": "Volver",
+    "composerPlaceholder": "Escribe una respuesta… (Enter para enviar, Shift+Enter para nueva línea)",
+    "send": "Enviar",
+    "messageSent": "Respuesta enviada",
+    "quickReplies": {
+      "label": "Respuestas rápidas",
+      "bookingConfirm": "¡Cita confirmada! Te esperamos en el estudio — trae tu documento de identidad y come algo antes.",
+      "aftercare": "Recordatorio de cuidados: mantenlo limpio, hidrata 2 veces al día y evita el sol y las piscinas durante 2 semanas. Envíanos una foto si algo no se ve bien.",
+      "depositReminder": "Recordatorio amistoso: tu enlace de depósito sigue abierto. Tu cita queda confirmada en cuanto se pague."
+    },
+    "quickReplyNames": {
+      "bookingConfirm": "Confirmar cita",
+      "aftercare": "Cuidados",
+      "depositReminder": "Recordar depósito"
+    },
+    "syncFootnote": "La sincronización en vivo con Instagram, WhatsApp y Facebook se conecta en Ajustes → Integraciones — está en el roadmap."
+  }
+}

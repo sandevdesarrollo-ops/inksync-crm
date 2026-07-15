@@ -1,0 +1,65 @@
+{
+  "designs": {
+    "title": "Diseños",
+    "description": "Portafolio y galería flash — todas las piezas que ofrece el estudio",
+    "addDesign": "Añadir diseño",
+    "searchPlaceholder": "Buscar diseños…",
+    "allStyles": "Todos los estilos",
+    "allArtists": "Todos los artistas",
+    "likes_one": "{{count}} me gusta",
+    "likes_other": "{{count}} me gusta",
+    "empty": {
+      "title": "Ningún diseño coincide",
+      "text": "Prueba con otra búsqueda o limpia los filtros.",
+      "clear": "Limpiar filtros"
+    },
+    "form": {
+      "addTitle": "Añadir diseño",
+      "addDescription": "Añade una nueva pieza a la galería del estudio.",
+      "title": "Título",
+      "titlePlaceholder": "p. ej. Serpiente y peonías",
+      "artist": "Artista",
+      "selectArtist": "Elige un artista",
+      "style": "Estilo",
+      "stylePlaceholder": "p. ej. Línea fina",
+      "bodyPart": "Zona del cuerpo",
+      "bodyPartPlaceholder": "p. ej. Antebrazo",
+      "price": "Precio",
+      "imageUrl": "URL de la imagen",
+      "imageUrlPlaceholder": "https://…",
+      "upload": "Subir imagen",
+      "or": "o",
+      "tags": "Etiquetas",
+      "tagsPlaceholder": "flash, disponible",
+      "tagsHint": "Separadas por comas",
+      "preview": "Vista previa",
+      "save": "Guardar diseño",
+      "added": "Diseño añadido a la galería"
+    },
+    "detail": {
+      "style": "Estilo",
+      "bodyPart": "Zona del cuerpo",
+      "price": "Precio",
+      "tags": "Etiquetas",
+      "by": "de {{name}}",
+      "like": "Me gusta",
+      "tryOn": "Probar en la piel",
+      "deleteTitle": "¿Eliminar este diseño?",
+      "deleteText": "«{{title}}» se eliminará de la galería. Esta acción no se puede deshacer.",
+      "deleted": "Diseño eliminado"
+    },
+    "tryOn": {
+      "title": "Probar en la piel",
+      "description": "Sube una foto de la zona del cuerpo y luego arrastra, redimensiona y gira el diseño.",
+      "uploadPhoto": "Subir una foto",
+      "uploadHint": "Funciona mejor con una foto clara y bien iluminada de la zona.",
+      "changePhoto": "Cambiar foto",
+      "dragHint": "Arrastra el diseño para colocarlo",
+      "scale": "Tamaño",
+      "rotation": "Rotación",
+      "opacity": "Opacidad",
+      "download": "Descargar vista previa",
+      "downloadError": "No se pudo exportar la imagen de vista previa"
+    }
+  }
+}

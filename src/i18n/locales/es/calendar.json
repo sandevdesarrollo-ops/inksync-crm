@@ -1,0 +1,69 @@
+{
+  "calendar": {
+    "title": "Calendario",
+    "description": "Citas y reservas de todo el estudio",
+    "newAppointment": "Nueva cita",
+    "views": { "month": "Mes", "week": "Semana" },
+    "prevPeriod": "Anterior",
+    "nextPeriod": "Siguiente",
+    "allArtists": "Todos los artistas",
+    "filterByArtist": "Filtrar por artista",
+    "more": "+{{count}} más",
+    "appointments_one": "{{count}} cita",
+    "appointments_other": "{{count}} citas",
+    "emptyDay": "No hay nada reservado para este día.",
+    "emptyDayAction": "Reservar sesión",
+    "status": {
+      "pending": "Pendiente",
+      "confirmed": "Confirmada",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    },
+    "form": {
+      "client": "Cliente",
+      "selectClient": "Selecciona un cliente",
+      "artist": "Artista",
+      "selectArtist": "Selecciona un artista",
+      "titleLabel": "Título",
+      "titlePlaceholder": "p. ej. Floral fine line — antebrazo",
+      "date": "Fecha",
+      "time": "Hora",
+      "duration": "Duración (min)",
+      "price": "Precio",
+      "deposit": "Depósito",
+      "depositHint": "{{percent}}% del precio, editable",
+      "notes": "Notas",
+      "notesPlaceholder": "Estado del stencil, ubicación, recordatorios…",
+      "create": "Crear cita"
+    },
+    "detail": {
+      "clientInfo": "Cliente",
+      "artist": "Artista",
+      "schedule": "Horario",
+      "price": "Precio",
+      "deposit": "Depósito",
+      "notes": "Notas",
+      "noNotes": "Esta cita no tiene notas.",
+      "confirm": "Confirmar",
+      "complete": "Completar",
+      "cancelAppointment": "Cancelar cita",
+      "delete": "Eliminar",
+      "confirmDelete": "¿Eliminar de verdad?",
+      "minutes": "{{count}} min"
+    },
+    "toast": {
+      "created": "Cita reservada",
+      "createdDesc": "{{title}} el {{date}}",
+      "missingFields": "Faltan datos",
+      "missingFieldsDesc": "Cliente, artista, título, fecha y hora son obligatorios.",
+      "statusUpdated": "Estado actualizado",
+      "statusUpdatedDesc": "Cita marcada como {{status}}.",
+      "deleted": "Cita eliminada"
+    },
+    "activity": {
+      "created": "Cita reservada: {{client}} — {{title}}.",
+      "statusChanged": "Cita {{status}}: {{client}} — {{title}}.",
+      "deleted": "Cita eliminada: {{client}} — {{title}}."
+    }
+  }
+}
