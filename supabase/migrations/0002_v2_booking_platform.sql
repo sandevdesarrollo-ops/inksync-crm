@@ -43,12 +43,26 @@ create table design_variants (
 alter table appointments add column variant_id uuid references design_variants(id);
 alter table appointments add column source text not null default 'studio' check (source in ('studio','public','flash_drop','event','waitlist'));
 alter table appointments add column policy_acknowledged_at timestamptz;
-alter table appointments add column time_range tstzrange
-  generated always as (tstzrange(start_at, start_at + make_interval(mins => duration_minutes))) stored;
+
+-- end_at is trigger-maintained (timestamptz + interval is timezone-dependent,
+-- so Postgres forbids it in a generated column).
+alter table appointments add column end_at timestamptz;
+
+create or replace function set_appointment_end() returns trigger
+language plpgsql as $$
+begin
+  new.end_at := new.start_at + make_interval(mins => new.duration_minutes);
+  return new;
+end $$;
+
+create trigger appointments_set_end before insert or update of start_at, duration_minutes
+  on appointments for each row execute function set_appointment_end();
+
+update appointments set end_at = start_at + make_interval(mins => duration_minutes) where end_at is null;
 
 -- An artist can never be double-booked (cancelled slots don't block).
 alter table appointments add constraint no_artist_overlap
-  exclude using gist (artist_id with =, time_range with &&)
+  exclude using gist (artist_id with =, tstzrange(start_at, end_at) with &&)
   where (status in ('pending','confirmed') and artist_id is not null);
 
 -- 15-minute checkout holds; expired holds are ignored by availability and reaped by a scheduled job.
