@@ -1,0 +1,72 @@
+{
+  "publicBook": {
+    "pageTitle": "Book your session",
+    "pageSubtitle": "Reserve your spot at {{studio}} in a few quick steps.",
+    "stepLabel": "Step {{current}} of {{total}}",
+    "steps": {
+      "design": "Design",
+      "schedule": "Artist & time",
+      "details": "Your details",
+      "confirmed": "Confirmed"
+    },
+    "back": "Back",
+    "continue": "Continue",
+    "design": {
+      "pickTitle": "Choose a design",
+      "pickHint": "Pick a piece from the collection, or start with a consultation.",
+      "consultCard": "Not sure yet?",
+      "consultCardDesc": "Book a consultation and plan your piece together with an artist.",
+      "consultSelectedTitle": "Consultation",
+      "consultSelectedDesc": "You'll decide on size, placement and price with your artist during the session.",
+      "approxDuration": "~2h",
+      "change": "Change",
+      "variantTitle": "Size & placement",
+      "noVariants": "This design is sized and priced during a consultation with the artist.",
+      "from": "from {{price}}",
+      "minutes": "{{count}} min"
+    },
+    "schedule": {
+      "artist": "Artist",
+      "day": "Day",
+      "time": "Time",
+      "pickArtistFirst": "Choose an artist to see their availability.",
+      "pickDay": "Pick a day to see open times.",
+      "loadingSlots": "Checking availability…",
+      "noSlots": "No open times on this day.",
+      "tryNextDay": "Try the next day",
+      "timesIn": "Times shown in studio time ({{tz}}).",
+      "holdFailed": "We couldn't reserve that time. Please pick another slot."
+    },
+    "details": {
+      "holdBanner": "This time is held for you for",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "notes": "Notes for the artist (optional)",
+      "notesPlaceholder": "Allergies, references, questions…",
+      "nameRequired": "Please enter your name.",
+      "emailInvalid": "Please enter a valid email address.",
+      "policy": "I understand that a deposit of {{percent}}% is due at confirmation, and that cancelling less than 48 hours before the session forfeits the deposit.",
+      "policyRequired": "Please accept the booking policy to continue.",
+      "submit": "Confirm booking",
+      "submitting": "Confirming…"
+    },
+    "confirmed": {
+      "title": "You're booked!",
+      "emailNote": "A confirmation email is on its way to {{email}}.",
+      "design": "Design",
+      "consultation": "Consultation",
+      "artist": "Artist",
+      "when": "When",
+      "price": "Price",
+      "deposit": "Deposit ({{percent}}%)",
+      "addToCalendar": "Add to calendar",
+      "backToStudio": "Back to {{studio}}"
+    },
+    "errors": {
+      "holdExpired": "Your reservation expired — please pick a new time.",
+      "slotTaken": "That time was just taken. Please pick another slot.",
+      "generic": "Something went wrong. Please try again."
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "publicSite": {
+    "hero": {
+      "fallbackBio": "Tatuajes a medida, oficio honesto. Cada pieza empieza con una conversación.",
+      "bookNow": "Reservar",
+      "customTattoo": "Tatuaje personalizado"
+    },
+    "designs": {
+      "title": "Diseños disponibles",
+      "subtitle": "Flash original, listo para la piel. Reserva una pieza o pruébatela antes.",
+      "all": "Todos los estilos",
+      "from": "desde {{price}}",
+      "consultation": "Requiere consulta",
+      "tattooThis": "Tatuármelo",
+      "requestConsult": "Pedir consulta",
+      "tryOn": "Probar",
+      "empty": "Aún no hay diseños publicados — cuéntanos qué tienes en mente.",
+      "emptyCta": "Enviar una propuesta"
+    },
+    "artists": {
+      "title": "Los artistas",
+      "subtitle": "Conoce las manos detrás de la tinta.",
+      "viewProfile": "Ver perfil"
+    },
+    "artist": {
+      "back": "Volver al estudio",
+      "designs": "Diseños de {{name}}",
+      "noDesigns": "{{name}} solo trabaja piezas personalizadas — trae tu idea.",
+      "customCta": "Tatuaje personalizado con {{name}}",
+      "notFound": "No hemos encontrado a ese artista."
+    },
+    "tryOn": {
+      "title": "Pruébatelo",
+      "description": "Sube una foto de la zona y coloca el diseño sobre tu piel.",
+      "uploadPhoto": "Subir una foto",
+      "uploadHint": "Funciona mejor una foto bien iluminada de la zona. No sale de tu dispositivo.",
+      "dragHint": "Arrastra para colocar",
+      "scale": "Tamaño",
+      "rotation": "Rotación",
+      "opacity": "Intensidad de tinta",
+      "changePhoto": "Cambiar foto",
+      "download": "Descargar vista previa",
+      "downloadError": "No se pudo exportar la vista previa. Inténtalo de nuevo.",
+      "gateText": "Te enviaremos esta vista previa y las opciones de tamaño.",
+      "emailPlaceholder": "tu@email.com",
+      "unlock": "Continuar",
+      "unlockedToast": "Listo — descarga tu vista previa o reserva el diseño.",
+      "bookThis": "Reservar este diseño",
+      "submitError": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "intake": {
+      "title": "Propuesta de tatuaje personalizado",
+      "titleWith": "Tatuaje personalizado con {{name}}",
+      "description": "Cuéntanos la pieza que sueñas y te responderemos muy pronto.",
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono (opcional)",
+      "artist": "Artista preferido (opcional)",
+      "anyArtist": "Sin preferencia",
+      "placement": "Zona del cuerpo",
+      "placementPlaceholder": "p. ej. antebrazo izquierdo, omóplato…",
+      "size": "Tamaño aprox. (cm)",
+      "budget": "Presupuesto",
+      "budgetMin": "Mín.",
+      "budgetMax": "Máx.",
+      "describe": "Describe tu idea",
+      "describePlaceholder": "Estilo, referencias, significado — todo lo que nos ayude a imaginarla…",
+      "submit": "Enviar propuesta",
+      "sending": "Enviando…",
+      "successTitle": "Propuesta recibida",
+      "successBody": "Gracias, {{name}} — la leeremos con calma y te responderemos a {{email}} pronto.",
+      "close": "Cerrar",
+      "error": "No pudimos enviar tu propuesta. Inténtalo de nuevo."
+    }
+  }
+}

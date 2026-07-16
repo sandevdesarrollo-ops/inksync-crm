@@ -23,8 +23,10 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';
+import { Switch } from '@/components/ui/switch';
 import { useToast } from '@/components/ui/use-toast';
-import { Heart, Trash2, Sparkles } from 'lucide-react';
+import VariantsSection from '@/components/designs/VariantsSection';
+import { Heart, Trash2, Sparkles, Globe } from 'lucide-react';
 
 export default function DesignDetailDialog({ design, artist, currency, open, onOpenChange, onTryOn }) {
   const { t } = useTranslation();
@@ -35,6 +37,15 @@ export default function DesignDetailDialog({ design, artist, currency, open, onO
   if (!design) return null;
 
   const like = () => update('designs', design.id, { likes: (design.likes || 0) + 1 });
+
+  const togglePublished = (published) => {
+    update('designs', design.id, { published });
+    toast({
+      description: published
+        ? t('variantsUi.designPublishedToast')
+        : t('variantsUi.designUnpublishedToast'),
+    });
+  };
 
   const del = () => {
     remove('designs', design.id);
@@ -108,6 +119,25 @@ export default function DesignDetailDialog({ design, artist, currency, open, onO
 
             <Separator />
 
+            <label className="flex cursor-pointer items-center justify-between gap-3">
+              <span className="flex min-w-0 items-center gap-2">
+                <Globe className="h-4 w-4 shrink-0 text-muted-foreground" />
+                <span className="min-w-0">
+                  <span className="block text-sm font-medium">
+                    {t('variantsUi.designPublished')}
+                  </span>
+                  <span className="block text-xs text-muted-foreground">
+                    {t('variantsUi.designPublishedHint')}
+                  </span>
+                </span>
+              </span>
+              <Switch
+                checked={!!design.published}
+                onCheckedChange={togglePublished}
+                aria-label={t('variantsUi.designPublished')}
+              />
+            </label>
+
             <div className="mt-auto flex flex-col gap-2">
               <Button onClick={() => onTryOn(design)}>
                 <Sparkles className="mr-2 h-4 w-4" />
@@ -151,6 +181,10 @@ export default function DesignDetailDialog({ design, artist, currency, open, onO
             </div>
           </div>
         </div>
+
+        <Separator className="my-2" />
+
+        <VariantsSection designId={design.id} currency={currency} />
       </DialogContent>
     </Dialog>
   );

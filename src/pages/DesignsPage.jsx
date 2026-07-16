@@ -18,7 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Plus, Search, Heart, Palette } from 'lucide-react';
+import { Plus, Search, Heart, Palette, Globe } from 'lucide-react';
 
 export default function DesignsPage() {
   const { t } = useTranslation();
@@ -152,6 +152,15 @@ export default function DesignsPage() {
                   <Badge variant="secondary" className="absolute left-2 top-2 bg-background/85">
                     {d.style}
                   </Badge>
+                  {d.published && (
+                    <span
+                      className="absolute right-2 top-2 inline-flex items-center justify-center rounded-full bg-background/85 p-1.5"
+                      title={t('variantsUi.publishedBadge')}
+                      aria-label={t('variantsUi.publishedBadge')}
+                    >
+                      <Globe className="h-3.5 w-3.5 text-primary" />
+                    </span>
+                  )}
                 </div>
                 <div className="p-3">
                   <div className="flex items-start justify-between gap-2">

@@ -14,10 +14,30 @@ import NurturePage from '@/pages/NurturePage';
 import InventoryPage from '@/pages/InventoryPage';
 import TeamPage from '@/pages/TeamPage';
 import SettingsPage from '@/pages/SettingsPage';
+import PublicSiteLayout from '@/public/PublicSiteLayout';
+import PublicHomePage from '@/public/PublicHomePage';
+import PublicArtistPage from '@/public/PublicArtistPage';
+import PublicBookingPage from '@/public/PublicBookingPage';
 
 export default function App() {
   return (
     <BrowserRouter>
+      <Routes>
+        {/* Client-facing site: public, no auth */}
+        <Route path="/s/:slug" element={<PublicSiteLayout />}>
+          <Route index element={<PublicHomePage />} />
+          <Route path="artists/:artistId" element={<PublicArtistPage />} />
+          <Route path="book" element={<PublicBookingPage />} />
+        </Route>
+        {/* Studio app: auth-gated */}
+        <Route path="*" element={<StudioApp />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+function StudioApp() {
+  return (
       <AuthGate>
       <Routes>
         <Route element={<AppLayout />}>
@@ -36,6 +56,5 @@ export default function App() {
         </Route>
       </Routes>
       </AuthGate>
-    </BrowserRouter>
   );
 }

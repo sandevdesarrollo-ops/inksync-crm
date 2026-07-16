@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
+import { Textarea } from '@/components/ui/textarea';
 import {
   Select,
   SelectTrigger,
@@ -29,6 +30,7 @@ const emptyForm = {
   phone: '',
   email: '',
   hourlyRate: 100,
+  publicBio: '',
   schedule: { mon: true, tue: true, wed: true, thu: true, fri: true, sat: false, sun: false },
 };
 
@@ -50,6 +52,7 @@ export default function MemberDialog({ open, onOpenChange, member, onSubmit }) {
             phone: member.phone || '',
             email: member.email || '',
             hourlyRate: member.hourlyRate ?? 0,
+            publicBio: member.publicBio || '',
             schedule: { ...emptyForm.schedule, ...member.schedule },
           }
         : emptyForm
@@ -76,6 +79,7 @@ export default function MemberDialog({ open, onOpenChange, member, onSubmit }) {
       phone: form.phone.trim(),
       email: form.email.trim(),
       hourlyRate: Number(form.hourlyRate) || 0,
+      publicBio: form.publicBio.trim(),
       schedule: form.schedule,
     });
     onOpenChange(false);
@@ -166,6 +170,18 @@ export default function MemberDialog({ open, onOpenChange, member, onSubmit }) {
                 onChange={(e) => set('email', e.target.value)}
               />
             </div>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="member-public-bio">{t('variantsUi.publicBio')}</Label>
+            <Textarea
+              id="member-public-bio"
+              rows={3}
+              value={form.publicBio}
+              onChange={(e) => set('publicBio', e.target.value)}
+              placeholder={t('variantsUi.publicBioPlaceholder')}
+            />
+            <p className="text-xs text-muted-foreground">{t('variantsUi.publicBioHint')}</p>
           </div>
 
           <div className="space-y-2">

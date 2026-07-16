@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { isSameMonth, parseISO } from 'date-fns';
-import { Plus, Pencil, Trash2, Phone, Mail, Users, Banknote } from 'lucide-react';
+import { Plus, Pencil, Trash2, Phone, Mail, Users, Banknote, Globe } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import MemberDialog, { DAY_KEYS } from '@/components/team/MemberDialog';
 import { useStore, fmtMoney } from '@/lib/store';
@@ -134,6 +134,15 @@ export default function TeamPage() {
       link: '/team',
     });
     setRemoving(null);
+  };
+
+  const togglePublished = (member, published) => {
+    update('artists', member.id, { published });
+    toast({
+      title: published
+        ? t('variantsUi.artistPublishedToast', { name: member.name })
+        : t('variantsUi.artistUnpublishedToast', { name: member.name }),
+    });
   };
 
   const toggleActive = (member, active) => {
@@ -275,6 +284,18 @@ export default function TeamPage() {
                         </p>
                       </div>
                     </div>
+
+                    <label className="flex cursor-pointer items-center justify-between gap-3">
+                      <span className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <Globe className="h-3.5 w-3.5" />
+                        {t('variantsUi.publicProfile')}
+                      </span>
+                      <Switch
+                        checked={!!member.published}
+                        onCheckedChange={(v) => togglePublished(member, v)}
+                        aria-label={t('variantsUi.publicProfile')}
+                      />
+                    </label>
 
                     <div className="mt-auto flex items-end justify-between gap-3 pt-1">
                       <ScheduleStrip schedule={member.schedule} t={t} />

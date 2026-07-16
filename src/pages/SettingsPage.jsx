@@ -9,6 +9,9 @@ import {
   CreditCard,
   CalendarDays,
   RotateCcw,
+  Globe,
+  Copy,
+  ExternalLink,
 } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import { useStore } from '@/lib/store';
@@ -19,6 +22,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
+import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -40,6 +44,7 @@ import {
 } from '@/components/ui/alert-dialog';
 
 const CURRENCIES = ['EUR', 'USD', 'GBP', 'BGN'];
+const TIMEZONES = ['Europe/Madrid', 'Europe/London', 'Europe/Sofia', 'America/New_York'];
 const LANGUAGES = [
   { code: 'en', label: 'English' },
   { code: 'es', label: 'Español' },
@@ -72,7 +77,47 @@ export default function SettingsPage() {
     depositPercent: settings.depositPercent,
     currency: settings.currency,
   });
+  const [publicPage, setPublicPage] = useState({
+    slug: settings.slug || '',
+    publicBio: settings.publicBio || '',
+    instagramHandle: settings.instagramHandle || '',
+    timezone: settings.timezone || 'Europe/London',
+  });
   const [resetConfirm, setResetConfirm] = useState(false);
+
+  const sanitizeSlug = (v) =>
+    v.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+
+  const publicLink = `${window.location.origin}/s/${settings.slug || ''}`;
+
+  const savePublicPage = (e) => {
+    e.preventDefault();
+    setSettings({
+      slug: sanitizeSlug(publicPage.slug),
+      publicBio: publicPage.publicBio.trim(),
+      instagramHandle: publicPage.instagramHandle.trim().replace(/^@/, ''),
+      timezone: publicPage.timezone,
+    });
+    toast({ title: t('variantsUi.publicPage.savedToast') });
+  };
+
+  const togglePublicPage = (published) => {
+    setSettings({ published });
+    toast({
+      title: published
+        ? t('variantsUi.publicPage.publishedToast')
+        : t('variantsUi.publicPage.unpublishedToast'),
+    });
+  };
+
+  const copyPublicLink = async () => {
+    try {
+      await navigator.clipboard.writeText(publicLink);
+      toast({ title: t('common.copied') });
+    } catch {
+      toast({ title: t('variantsUi.publicPage.copyFailed'), variant: 'destructive' });
+    }
+  };
 
   const saveProfile = (e) => {
     e.preventDefault();
@@ -388,8 +433,129 @@ export default function SettingsPage() {
           </Card>
         </motion.div>
 
-        {/* Danger zone */}
+        {/* Public page */}
         <motion.div {...fade} transition={{ ...fade.transition, delay: 0.25 }}>
+          <Card className="h-full">
+            <CardHeader>
+              <CardTitle className="font-display text-xl">
+                {t('variantsUi.publicPage.title')}
+              </CardTitle>
+              <CardDescription>{t('variantsUi.publicPage.description')}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <label className="flex cursor-pointer items-center justify-between gap-4 pb-4">
+                <span className="flex min-w-0 items-center gap-3">
+                  <Globe className="h-4 w-4 shrink-0 text-muted-foreground" />
+                  <span className="min-w-0">
+                    <span className="block text-sm font-medium">
+                      {t('variantsUi.publicPage.published')}
+                    </span>
+                    <span className="block text-xs text-muted-foreground">
+                      {t('variantsUi.publicPage.publishedHint')}
+                    </span>
+                  </span>
+                </span>
+                <Switch
+                  checked={!!settings.published}
+                  onCheckedChange={togglePublicPage}
+                  aria-label={t('variantsUi.publicPage.published')}
+                />
+              </label>
+              <Separator />
+              <form onSubmit={savePublicPage} className="space-y-4 pt-4">
+                <div className="space-y-2">
+                  <Label htmlFor="public-slug">{t('variantsUi.publicPage.slug')}</Label>
+                  <Input
+                    id="public-slug"
+                    value={publicPage.slug}
+                    onChange={(e) =>
+                      setPublicPage((p) => ({ ...p, slug: sanitizeSlug(e.target.value) }))
+                    }
+                    placeholder="my-studio"
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    {t('variantsUi.publicPage.slugHint')}
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="public-bio">{t('variantsUi.publicPage.publicBio')}</Label>
+                  <Textarea
+                    id="public-bio"
+                    rows={3}
+                    value={publicPage.publicBio}
+                    onChange={(e) =>
+                      setPublicPage((p) => ({ ...p, publicBio: e.target.value }))
+                    }
+                    placeholder={t('variantsUi.publicPage.publicBioPlaceholder')}
+                  />
+                </div>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div className="space-y-2">
+                    <Label htmlFor="public-instagram">
+                      {t('variantsUi.publicPage.instagramHandle')}
+                    </Label>
+                    <Input
+                      id="public-instagram"
+                      value={publicPage.instagramHandle}
+                      onChange={(e) =>
+                        setPublicPage((p) => ({ ...p, instagramHandle: e.target.value }))
+                      }
+                      placeholder={t('variantsUi.publicPage.instagramPlaceholder')}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>{t('variantsUi.publicPage.timezone')}</Label>
+                    <Select
+                      value={publicPage.timezone}
+                      onValueChange={(v) => setPublicPage((p) => ({ ...p, timezone: v }))}
+                    >
+                      <SelectTrigger>
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {TIMEZONES.map((tz) => (
+                          <SelectItem key={tz} value={tz}>
+                            {tz}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="public-link">{t('variantsUi.publicPage.link')}</Label>
+                  <div className="flex gap-2">
+                    <Input id="public-link" value={publicLink} readOnly className="min-w-0" />
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="icon"
+                      className="shrink-0"
+                      onClick={copyPublicLink}
+                      aria-label={t('variantsUi.publicPage.copy')}
+                      title={t('variantsUi.publicPage.copy')}
+                    >
+                      <Copy className="h-4 w-4" />
+                    </Button>
+                    <Button type="button" variant="outline" className="shrink-0" asChild>
+                      <a href={publicLink} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        {t('variantsUi.publicPage.open')}
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+                <Button type="submit">
+                  <Save className="mr-2 h-4 w-4" />
+                  {t('common.save')}
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        {/* Danger zone */}
+        <motion.div {...fade} transition={{ ...fade.transition, delay: 0.3 }}>
           <Card className="h-full border-destructive/40">
             <CardHeader>
               <CardTitle className="font-display text-xl text-destructive">

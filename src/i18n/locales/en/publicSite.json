@@ -1,0 +1,76 @@
+{
+  "publicSite": {
+    "hero": {
+      "fallbackBio": "Custom tattoos, honest craft. Every piece starts with a conversation.",
+      "bookNow": "Book now",
+      "customTattoo": "Custom tattoo"
+    },
+    "designs": {
+      "title": "Available designs",
+      "subtitle": "Original flash, ready for skin. Reserve a piece or try it on first.",
+      "all": "All styles",
+      "from": "from {{price}}",
+      "consultation": "Consultation required",
+      "tattooThis": "Tattoo this",
+      "requestConsult": "Request consult",
+      "tryOn": "Try on",
+      "empty": "No designs published yet — tell us what you have in mind instead.",
+      "emptyCta": "Start a custom brief"
+    },
+    "artists": {
+      "title": "The artists",
+      "subtitle": "Meet the hands behind the ink.",
+      "viewProfile": "View profile"
+    },
+    "artist": {
+      "back": "Back to the studio",
+      "designs": "Designs by {{name}}",
+      "noDesigns": "{{name}} works on custom pieces only — bring your idea.",
+      "customCta": "Custom tattoo with {{name}}",
+      "notFound": "We couldn't find that artist."
+    },
+    "tryOn": {
+      "title": "Try it on",
+      "description": "Upload a photo of the spot and place the design on your skin.",
+      "uploadPhoto": "Upload a photo",
+      "uploadHint": "A well-lit photo of the placement area works best. It stays on your device.",
+      "dragHint": "Drag to position",
+      "scale": "Size",
+      "rotation": "Rotation",
+      "opacity": "Ink strength",
+      "changePhoto": "Change photo",
+      "download": "Download preview",
+      "downloadError": "Couldn't export the preview. Please try again.",
+      "gateText": "We'll send you this preview and sizing options.",
+      "emailPlaceholder": "you@email.com",
+      "unlock": "Continue",
+      "unlockedToast": "You're in — download your preview or book the design.",
+      "bookThis": "Book this design",
+      "submitError": "Something went wrong. Please try again."
+    },
+    "intake": {
+      "title": "Custom tattoo brief",
+      "titleWith": "Custom tattoo with {{name}}",
+      "description": "Tell us about the piece you're dreaming of and we'll get back to you shortly.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "artist": "Preferred artist (optional)",
+      "anyArtist": "No preference",
+      "placement": "Placement",
+      "placementPlaceholder": "e.g. left forearm, shoulder blade…",
+      "size": "Approx. size (cm)",
+      "budget": "Budget",
+      "budgetMin": "Min",
+      "budgetMax": "Max",
+      "describe": "Describe your idea",
+      "describePlaceholder": "Style, references, meaning — anything that helps us picture it…",
+      "submit": "Send brief",
+      "sending": "Sending…",
+      "successTitle": "Brief received",
+      "successBody": "Thank you, {{name}} — we'll read it carefully and reply to {{email}} soon.",
+      "close": "Close",
+      "error": "We couldn't send your brief. Please try again."
+    }
+  }
+}

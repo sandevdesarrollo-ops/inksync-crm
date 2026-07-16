@@ -1,0 +1,72 @@
+{
+  "publicBook": {
+    "pageTitle": "Reserva tu sesión",
+    "pageSubtitle": "Consigue tu cita en {{studio}} en unos pocos pasos.",
+    "stepLabel": "Paso {{current}} de {{total}}",
+    "steps": {
+      "design": "Diseño",
+      "schedule": "Artista y hora",
+      "details": "Tus datos",
+      "confirmed": "Confirmado"
+    },
+    "back": "Atrás",
+    "continue": "Continuar",
+    "design": {
+      "pickTitle": "Elige un diseño",
+      "pickHint": "Escoge una pieza de la colección o empieza con una consulta.",
+      "consultCard": "¿Aún no lo tienes claro?",
+      "consultCardDesc": "Reserva una consulta y planifica tu pieza junto al artista.",
+      "consultSelectedTitle": "Consulta",
+      "consultSelectedDesc": "Decidiréis el tamaño, la zona y el precio con tu artista durante la sesión.",
+      "approxDuration": "~2 h",
+      "change": "Cambiar",
+      "variantTitle": "Tamaño y zona",
+      "noVariants": "El tamaño y el precio de este diseño se definen en una consulta con el artista.",
+      "from": "desde {{price}}",
+      "minutes": "{{count}} min"
+    },
+    "schedule": {
+      "artist": "Artista",
+      "day": "Día",
+      "time": "Hora",
+      "pickArtistFirst": "Elige un artista para ver su disponibilidad.",
+      "pickDay": "Elige un día para ver las horas libres.",
+      "loadingSlots": "Comprobando disponibilidad…",
+      "noSlots": "No quedan horas libres este día.",
+      "tryNextDay": "Prueba el día siguiente",
+      "timesIn": "Horas en el horario del estudio ({{tz}}).",
+      "holdFailed": "No hemos podido reservar esa hora. Elige otro hueco."
+    },
+    "details": {
+      "holdBanner": "Te guardamos esta hora durante",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono (opcional)",
+      "notes": "Notas para el artista (opcional)",
+      "notesPlaceholder": "Alergias, referencias, dudas…",
+      "nameRequired": "Escribe tu nombre.",
+      "emailInvalid": "Introduce un correo electrónico válido.",
+      "policy": "Entiendo que al confirmar se abona un depósito del {{percent}} % y que cancelar con menos de 48 horas de antelación supone perder el depósito.",
+      "policyRequired": "Debes aceptar la política de reservas para continuar.",
+      "submit": "Confirmar reserva",
+      "submitting": "Confirmando…"
+    },
+    "confirmed": {
+      "title": "¡Reserva confirmada!",
+      "emailNote": "Te hemos enviado un correo de confirmación a {{email}}.",
+      "design": "Diseño",
+      "consultation": "Consulta",
+      "artist": "Artista",
+      "when": "Cuándo",
+      "price": "Precio",
+      "deposit": "Depósito ({{percent}} %)",
+      "addToCalendar": "Añadir al calendario",
+      "backToStudio": "Volver a {{studio}}"
+    },
+    "errors": {
+      "holdExpired": "Tu reserva ha caducado: elige una nueva hora.",
+      "slotTaken": "Esa hora se acaba de ocupar. Elige otro hueco.",
+      "generic": "Algo ha salido mal. Inténtalo de nuevo."
+    }
+  }
+}

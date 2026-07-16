@@ -13,8 +13,8 @@ export const COLLECTIONS = {
   },
   artists: {
     table: 'artists',
-    same: ['name', 'role', 'styles', 'avatar', 'phone', 'email', 'schedule', 'active'],
-    renames: { hourlyRate: 'hourly_rate' },
+    same: ['name', 'role', 'styles', 'avatar', 'phone', 'email', 'schedule', 'active', 'published'],
+    renames: { hourlyRate: 'hourly_rate', publicBio: 'public_bio' },
   },
   appointments: {
     table: 'appointments',
@@ -23,7 +23,7 @@ export const COLLECTIONS = {
   },
   designs: {
     table: 'designs',
-    same: ['title', 'style', 'price', 'image', 'tags', 'likes'],
+    same: ['title', 'style', 'price', 'image', 'tags', 'likes', 'published'],
     renames: { artistId: 'artist_id', bodyPart: 'body_part' },
   },
   inventory: {
@@ -45,6 +45,16 @@ export const COLLECTIONS = {
     table: 'nurtures',
     same: ['name', 'trigger', 'channel', 'active', 'sent', 'opened', 'template'],
     renames: {},
+  },
+  variants: {
+    table: 'design_variants',
+    same: ['placements', 'price', 'active'],
+    renames: { designId: 'design_id', sizeCm: 'size_cm', durationMinutes: 'duration_minutes' },
+  },
+  projects: {
+    table: 'projects',
+    same: ['title', 'status', 'notes'],
+    renames: { clientId: 'client_id', artistId: 'artist_id' },
   },
   // messages are handled specially (sendMessage / fetchStudioData join);
   // this entry lets add/update/remove work on the conversation row itself.
@@ -76,6 +86,8 @@ const SETTINGS_MAP = {
   studioName: 'name', address: 'address', phone: 'phone', email: 'email', currency: 'currency',
   openTime: 'open_time', closeTime: 'close_time', defaultSessionMinutes: 'default_session_minutes',
   depositPercent: 'deposit_percent', notifications: 'notifications',
+  slug: 'slug', published: 'published', publicBio: 'public_bio',
+  instagramHandle: 'instagram_handle', timezone: 'timezone',
 };
 
 export function settingsToDb(patch) {
@@ -133,18 +145,26 @@ export async function seedRemote(studioId) {
   const uuid = () => crypto.randomUUID();
   const remap = (old) => (old ? (idMap[old] ??= uuid()) : old);
 
-  const withRefs = (collection, items, refs) =>
+  const withRefs = (collection, items, refs, extra = {}) =>
     items.map((it) => {
-      const copy = { ...it, id: remap(it.id) };
+      const copy = { ...it, ...extra, id: remap(it.id) };
       for (const r of refs) copy[r] = remap(copy[r]);
       return toDb(collection, copy, studioId);
     });
 
+  // Demo variants: two artist-fixed size/placement options per design.
+  const variantRows = s.designs.flatMap((d) => [
+    { designId: d.id, sizeCm: 12, placements: [d.bodyPart || 'Forearm'], price: d.price, durationMinutes: 120 },
+    { designId: d.id, sizeCm: 18, placements: [d.bodyPart || 'Forearm', 'Thigh'], price: Math.round(d.price * 1.5), durationMinutes: 180 },
+  ]).filter((v) => v.price);
+
   const inserts = [
-    ['artists', withRefs('artists', s.artists, [])],
+    ['artists', withRefs('artists', s.artists, [], { published: true })],
     ['clients', withRefs('clients', s.clients, ['preferredArtistId'])],
     ['appointments', withRefs('appointments', s.appointments, ['clientId', 'artistId'])],
-    ['designs', withRefs('designs', s.designs, ['artistId'])],
+    ['designs', withRefs('designs', s.designs, ['artistId'], { published: true })],
+    ['variants', variantRows.map((v) => toDb('variants', { ...v, id: uuid(), designId: remap(v.designId) }, studioId))],
+    ['projects', [toDb('projects', { id: uuid(), clientId: remap('c4'), artistId: remap('a3'), title: 'Full sleeve — dragon & koi', status: 'in_progress', notes: 'Session 6 of ~10. Shading phase.' }, studioId)]],
     ['inventory', withRefs('inventory', s.inventory, [])],
     ['proposals', withRefs('proposals', s.proposals, ['clientId', 'artistId'])],
     ['activities', s.activities.map((a) => toDb('activities', { ...a, id: uuid() }, studioId))],
@@ -168,11 +188,19 @@ export async function seedRemote(studioId) {
   // (name/address/phone/email) chosen at signup.
   const { studioName, address, phone, email, ...rules } = s.settings;
   await supabase.from('studios').update(settingsToDb(rules)).eq('id', studioId);
+
+  // Publish the public page with a slug derived from the studio's own name.
+  const { data: studioRow } = await supabase.from('studios').select('name').eq('id', studioId).single();
+  const base = (studioRow?.name || 'studio').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'studio';
+  const { error: slugErr } = await supabase.from('studios').update({ slug: base, published: true }).eq('id', studioId);
+  if (slugErr) {
+    await supabase.from('studios').update({ slug: `${base}-${studioId.slice(0, 4)}`, published: true }).eq('id', studioId);
+  }
 }
 
 export async function wipeStudioData(studioId) {
   // Order matters for FKs; messages/conversations first, artists last.
-  const tables = ['messages', 'conversations', 'activities', 'nurtures', 'proposals', 'appointments', 'designs', 'inventory', 'clients', 'artists'];
+  const tables = ['messages', 'conversations', 'activities', 'nurtures', 'proposals', 'email_outbox', 'booking_holds', 'appointments', 'design_variants', 'designs', 'projects', 'inventory', 'clients', 'artists'];
   for (const t of tables) {
     const { error } = await supabase.from(t).delete().eq('studio_id', studioId);
     if (error) throw error;
