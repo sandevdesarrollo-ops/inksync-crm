@@ -4,8 +4,9 @@ import { useTranslation } from 'react-i18next';
 import {
   LayoutDashboard, Crosshair, BarChart3, CalendarDays, Users, Palette,
   FileText, MessageSquare, HeartHandshake, Package, UserCog, Settings,
-  Menu, Languages,
+  Menu, Languages, LogOut,
 } from 'lucide-react';
+import { supabase, supabaseEnabled } from '@/lib/supabase';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import {
@@ -138,6 +139,11 @@ export default function AppLayout() {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
+          {supabaseEnabled && (
+            <Button variant="ghost" size="icon" aria-label="Sign out" onClick={() => supabase.auth.signOut()}>
+              <LogOut className="h-4 w-4" />
+            </Button>
+          )}
         </header>
 
         <main className="flex-1 p-6 lg:p-8">

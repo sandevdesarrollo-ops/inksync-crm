@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AuthGate from '@/components/auth/AuthGate';
 import AppLayout from '@/components/layout/AppLayout';
 import DashboardPage from '@/pages/DashboardPage';
 import ActivityPage from '@/pages/ActivityPage';
@@ -17,6 +18,7 @@ import SettingsPage from '@/pages/SettingsPage';
 export default function App() {
   return (
     <BrowserRouter>
+      <AuthGate>
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<DashboardPage />} />
@@ -33,6 +35,7 @@ export default function App() {
           <Route path="/settings" element={<SettingsPage />} />
         </Route>
       </Routes>
+      </AuthGate>
     </BrowserRouter>
   );
 }
