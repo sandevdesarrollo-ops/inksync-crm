@@ -1,4 +1,4 @@
-# InkSync — Product Specification (v2)
+# InkSync — Product Specification (v2.1)
 
 > **Canonical reference.** This document is the single source of truth for what InkSync is, what's built, what's being built, and how it makes money. Written to be read by humans and AI assistants (Claude, GPT, etc.) — everything needed for full context is here or linked.
 > Companion docs: [DESIGN.md](DESIGN.md) (visual system) · [ROADMAP.md](ROADMAP.md) (phasing) · [supabase/migrations/](supabase/migrations/) (schema).
@@ -57,6 +57,21 @@ Studio/artist connects Instagram (Meta Graph API): follower growth, reach, engag
 ### 3.11 Payments & platform revenue (Stripe Connect)
 Stripe Connect (Standard) per studio. Deposits flow client → studio's Stripe with an **application fee** to InkSync on every transaction. Webhooks flip booking/proposal status (`deposit_paid`). Refunds follow the no-show policy engine. This is the primary revenue engine at scale — subscriptions are the floor, payment volume is the upside, multi-location studios are the whales.
 
+### 3.12 Multi-session projects (v2.1)
+A tattoo is often a journey (sleeve = 8–10 sessions), not an appointment. `projects` group appointments under one piece: concept → sessions → healed result. Carries progress photos, session notes, stencil-approval status, and total invested. Bookings can attach to a project from day one (schema in Phase 1; full UI with photos/stencil flow in Phase 3).
+
+### 3.13 Instagram DM → AI lead pipeline (flagship, own phase)
+Studios live in Instagram DMs and lose bookings in the pile. Pipeline: DM arrives → AI reads it → creates an `intake_request` lead → extracts reference images → asks qualifying questions (placement, size, budget, availability) inside the messaging window → proposes consult slots → collects deposit → syncs calendar. Artist steps in only to quote/design. Requires Meta app review (long lead time — apply early), webhook infra, and strict messaging-policy compliance. This is the "hours saved every week" feature and the sharpest sales hook after the booking demo.
+
+### 3.14 Client accounts: portal, tattoo passport, loyalty (own phase)
+Client login on the public site: their bookings, project timelines, payment history, aftercare tracker, touch-up reminders — and the **Digital Tattoo Passport**: every piece, artist, date, healed photo and aftercare record in one place. Loyalty + referral rewards attach here. Retention engine and a strong consumer-facing brand hook.
+
+### 3.15 AI principles
+AI is applied ONLY where inputs are unstructured: DM/intake summarization, reference-image extraction, qualifying-question flows, aftercare-answer drafting. Price, duration and placement come from artist-defined design variants — deterministic by design. No AI guessing where the artist already decided.
+
+### 3.16 Studio ops suite (Empire tier, later)
+Artist commission splits + payroll exports, room/chair scheduling, walk-in queue, needle/ink batch tracking (links inventory to consent records for hygiene audits).
+
 ## 4. Pricing tiers
 
 | | **Solo — €39/mo** | **Studio — €89/mo** | **Empire — €149+/mo** |
@@ -85,12 +100,21 @@ Gate money features and brand — never cripple the core booking workflow (cripp
 
 ## 6. Build phases
 
-- **Phase 0 (prereq):** Auth + migrate app store to Supabase. Seed → "demo studio" generator on signup.
-- **Phase 1 — the demo that closes studios:** design variants, booking engine (holds + exclusion constraints + availability), minimal public studio page, transactional emails.
-- **Phase 2 — the no-show killer:** Stripe Connect deposits + application fee, no-show policy engine, refund logic.
-- **Phase 3 — the "they get us" release:** consent forms (+QR, encryption), intake requests, try-on lead capture + nurture triggers.
+Strategy: one loop at a time, each excellent before the next — the competition got thin by spreading. The multi-tenant chassis (DB + module pattern + i18n + design system) makes each phase additive, never a rewrite.
+
+- **Phase 0 — DONE:** Supabase auth, database-backed store, demo seeding on signup. Live in production.
+- **Phase 1 — the demo that closes studios:** design variants, booking engine (holds + exclusion constraints + availability), minimal public studio page, transactional emails. Plus `projects` schema groundwork (§3.12).
+- **Phase 2 — the no-show killer:** Stripe Connect deposits + lean application fee (InkDesk markets "no platform fees" — ours must be small and justified by recovered revenue), no-show policy engine, refund logic.
+- **Phase 3 — the "they get us" release:** consent forms (+QR, encryption), intake requests, try-on lead capture + nurture triggers, projects UI (progress photos, stencil approval).
 - **Phase 4 — the promotion engine:** flash drops, events, waitlist/backfill, aftercare+review loop, Instagram insights.
-- **Phase 5 — premium & scale:** site customization, custom domains, multi-location, per-artist Instagram, AR try-on exploration, posting automation.
+- **Phase 5 — ⭐ the Instagram AI pipeline (§3.13):** DM → AI-qualified lead → consult booked → deposit collected. Meta app review must be filed phases earlier.
+- **Phase 6 — client accounts (§3.14):** portal, Digital Tattoo Passport, loyalty + referrals.
+- **Phase 7 — premium & ops:** site customization, custom domains, multi-location, ops suite (§3.16), AR try-on exploration, posting automation.
+
+## 6b. Competitive landscape (July 2026)
+- **InkDesk (inkdesk.app)** — closest competitor. Has: self-booking links, custom intake forms, client projects, Stripe deposits with no platform fees, digital waivers, reminders, reports, native mobile apps. Is: an admin tool for the artist. Lacks: real Instagram integration (their inbox is email-based), client-facing discovery/public site, try-on, constrained variants, flash drops/events, loyalty/passport, multi-language.
+- **Generic booking tools (Square/Acuity/Calendly-class)** — no tattoo semantics at all.
+- **Our position:** InkDesk administrates clients; InkSync *acquires and keeps* them — public studio site, try-on leads, promotion engine, Instagram pipeline, passport/loyalty — on top of parity admin features.
 
 ## 7. Key risks / open questions
 
